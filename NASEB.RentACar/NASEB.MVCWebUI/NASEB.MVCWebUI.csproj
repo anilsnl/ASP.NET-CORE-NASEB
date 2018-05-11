@@ -1,0 +1,91 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\Templates\Admin\bower_components\**" />
+    <Content Remove="wwwroot\Templates\Admin\bower_components\**" />
+    <EmbeddedResource Remove="wwwroot\Templates\Admin\bower_components\**" />
+    <None Remove="wwwroot\Templates\Admin\bower_components\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.7" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0"></DotNetCliToolReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\DataTable\Buttons-1.5.1\css\common.scss" />
+    <None Include="wwwroot\DataTable\Buttons-1.5.1\css\mixins.scss" />
+    <None Include="wwwroot\DataTable\Buttons-1.5.1\js\buttons.bootstrap.js" />
+    <None Include="wwwroot\DataTable\Buttons-1.5.1\js\buttons.bootstrap.min.js" />
+    <None Include="wwwroot\DataTable\Buttons-1.5.1\js\buttons.bootstrap4.js" />
+    <None Include="wwwroot\DataTable\Buttons-1.5.1\js\buttons.bootstrap4.min.js" />
+    <None Include="wwwroot\DataTable\Buttons-1.5.1\js\buttons.colVis.js" />
+    <None Include="wwwroot\DataTable\Buttons-1.5.1\js\buttons.colVis.min.js" />
+    <None Include="wwwroot\DataTable\Buttons-1.5.1\js\buttons.flash.js" />
+    <None Include="wwwroot\DataTable\Buttons-1.5.1\js\buttons.flash.min.js" />
+    <None Include="wwwroot\DataTable\Buttons-1.5.1\js\buttons.foundation.js" />
+    <None Include="wwwroot\DataTable\Buttons-1.5.1\js\buttons.foundation.min.js" />
+    <None Include="wwwroot\DataTable\Buttons-1.5.1\js\buttons.html5.js" />
+    <None Include="wwwroot\DataTable\Buttons-1.5.1\js\buttons.html5.min.js" />
+    <None Include="wwwroot\DataTable\Buttons-1.5.1\js\buttons.jqueryui.js" />
+    <None Include="wwwroot\DataTable\Buttons-1.5.1\js\buttons.jqueryui.min.js" />
+    <None Include="wwwroot\DataTable\Buttons-1.5.1\js\buttons.print.js" />
+    <None Include="wwwroot\DataTable\Buttons-1.5.1\js\buttons.print.min.js" />
+    <None Include="wwwroot\DataTable\Buttons-1.5.1\js\buttons.semanticui.js" />
+    <None Include="wwwroot\DataTable\Buttons-1.5.1\js\buttons.semanticui.min.js" />
+    <None Include="wwwroot\DataTable\Buttons-1.5.1\js\dataTables.buttons.js" />
+    <None Include="wwwroot\DataTable\Buttons-1.5.1\js\dataTables.buttons.min.js" />
+    <None Include="wwwroot\DataTable\Buttons-1.5.1\swf\flashExport.swf" />
+    <None Include="wwwroot\DataTable\DataTables-1.10.16\js\dataTables.bootstrap.js" />
+    <None Include="wwwroot\DataTable\DataTables-1.10.16\js\dataTables.bootstrap.min.js" />
+    <None Include="wwwroot\DataTable\DataTables-1.10.16\js\dataTables.bootstrap4.js" />
+    <None Include="wwwroot\DataTable\DataTables-1.10.16\js\dataTables.bootstrap4.min.js" />
+    <None Include="wwwroot\DataTable\DataTables-1.10.16\js\dataTables.foundation.js" />
+    <None Include="wwwroot\DataTable\DataTables-1.10.16\js\dataTables.foundation.min.js" />
+    <None Include="wwwroot\DataTable\DataTables-1.10.16\js\dataTables.jqueryui.js" />
+    <None Include="wwwroot\DataTable\DataTables-1.10.16\js\dataTables.jqueryui.min.js" />
+    <None Include="wwwroot\DataTable\DataTables-1.10.16\js\dataTables.semanticui.js" />
+    <None Include="wwwroot\DataTable\DataTables-1.10.16\js\dataTables.semanticui.min.js" />
+    <None Include="wwwroot\DataTable\DataTables-1.10.16\js\jquery.dataTables.js" />
+    <None Include="wwwroot\DataTable\DataTables-1.10.16\js\jquery.dataTables.min.js" />
+    <None Include="wwwroot\DataTable\datatables.js" />
+    <None Include="wwwroot\DataTable\datatables.min.js" />
+    <None Include="wwwroot\DataTable\FixedHeader-3.1.3\js\dataTables.fixedHeader.js" />
+    <None Include="wwwroot\DataTable\FixedHeader-3.1.3\js\dataTables.fixedHeader.min.js" />
+    <None Include="wwwroot\DataTable\Scroller-1.4.4\js\dataTables.scroller.js" />
+    <None Include="wwwroot\DataTable\Scroller-1.4.4\js\dataTables.scroller.min.js" />
+    <None Include="wwwroot\DataTable\Select-1.2.5\js\dataTables.select.js" />
+    <None Include="wwwroot\DataTable\Select-1.2.5\js\dataTables.select.min.js" />
+    <None Include="wwwroot\Templates\Admin\.github\ISSUE_TEMPLATE.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NASEB.DAL\NASEB.DAL.csproj" />
+    <ProjectReference Include="..\NASEB.Entities\NASEB.Entities.csproj" />
+    <ProjectReference Include="..\NASEB.Helper\NASEB.Helper.csproj" />
+    <ProjectReference Include="..\NASEB.Services\NASEB.Services.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptModuleKind />
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
+
+</Project>

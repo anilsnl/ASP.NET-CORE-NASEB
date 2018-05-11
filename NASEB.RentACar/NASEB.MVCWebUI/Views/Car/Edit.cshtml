@@ -1,0 +1,60 @@
+﻿@model IEnumerable<NASEB.Entities.Concrete.Branch>
+@{
+    ViewData["Title"] = "Araba Edit";
+}
+
+<form method="post" action="/Car/Edit">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Araba Adı</label>
+        <input type="text" class="form-control" id="CarName" name="CarName" aria-describedby="CarName" value="@ViewBag.car.CarName">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Plaka</label>
+        <input type="text" class="form-control" id="Plate" name="Plate" aria-describedby="Plate" value="@ViewBag.car.Plate">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Detaylar</label>
+        <input type="text" class="form-control" id="Details" name="Details" aria-describedby="Details" value="@ViewBag.car.Detail">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Lisans Bilgisi</label>
+        <input type="text" class="form-control" id="LicenseInfo" name="LicenseInfo" aria-describedby="LicenseInfo" value="@ViewBag.car.LicenseInfo">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Durum</label>
+        <input type="text" class="form-control" id="Status" name="Status" aria-describedby="Status" value="@ViewBag.car.Status">
+
+    </div>
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">Şube ID</label>
+        <select class="form-control" id="ExistingBranchID" name="ExistingBranchID">
+            <option value="@ViewBag.car.ExistingBranchID" selected>@ViewBag.car.ExistingBranchID</option>
+            @foreach (var item in Model)
+            {
+                <option value="@item.BranchID">@item.BranchName</option>
+            }
+
+
+        </select>
+
+    </div>
+    <div hidden class="form-group">
+        <label for="exampleInputEmail1">User ID</label>
+        <input type="text" class="form-control" id="UserID" name="UserID" aria-describedby="UserID" value="@ViewBag.user">
+
+    </div>
+    <div hidden class="form-group">
+        <label for="exampleInputEmail1">Car ID</label>
+        <input type="text" class="form-control" id="CarID" name="CarID" aria-describedby="CarID" value="@ViewBag.car.CarID">
+
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>
+

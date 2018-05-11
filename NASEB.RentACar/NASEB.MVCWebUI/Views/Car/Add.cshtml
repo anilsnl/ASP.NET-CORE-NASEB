@@ -1,0 +1,56 @@
+﻿@model IEnumerable<NASEB.Entities.Concrete.Branch>
+@{
+    ViewData["Title"] = "Araba Ekle";
+}
+
+<form method="post" action="/Car/Add">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Araba Adı</label>
+        <input type="text" class="form-control" id="CarName" name="CarName" aria-describedby="CarName" placeholder="Araba Adını Giriniz...">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Plaka</label>
+        <input type="text" class="form-control" id="Plate" name="Plate" aria-describedby="Plate" placeholder="Plakayı Giriniz...">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Detaylar</label>
+        <input type="text" class="form-control" id="Details" name="Details" aria-describedby="Details" placeholder="Detay Bilgisini Giriniz...">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Lisans Bilgisi</label>
+        <input type="text" class="form-control" id="LicenseInfo" name="LicenseInfo" aria-describedby="LicenseInfo" placeholder="Lisans Bilgisini Giriniz...">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Durum</label>
+        <select name="Status" id="Status" class="form-control">
+            <option value="Uygum">Uygun</option>
+            <option value="Onarım/Bakım">Onarım/Bakım</option>
+        </select>
+    </div>
+   
+    <div class="form-group">
+        <label for="exampleInputEmail1">Şube Adı</label>
+        <select class="form-control" id="ExistingBranchID" name="ExistingBranchID">
+            <option selected>Lütfen Şube Seçiniz...</option>
+            @foreach (var item in Model)
+        {
+            <option value="@item.BranchID">@item.BranchName</option>
+    }
+
+
+        </select>
+
+    </div>
+    <div hidden class="form-group">
+        <label for="exampleInputEmail1">User ID</label>
+        <input type="text" class="form-control" id="UserID" name="UserID" aria-describedby="UserID" value="@ViewBag.user">
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>
+

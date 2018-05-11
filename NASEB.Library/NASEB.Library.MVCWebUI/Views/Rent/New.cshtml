@@ -1,0 +1,312 @@
+﻿@model AddNewRentModel
+@{
+    ViewData["Title"] = "Yeni Kiralama Girişi";
+}
+
+<!--modal for selecting member-->
+<div class="modal modal-dialog modal-danger" id="mdl-select-member" style="position: absolute;">
+    <div class="modal-content ">
+        <div class="modal-header">
+            <h1 class="modal-title">Üye Seçimi Yapın</h1>
+        </div>
+        <div class="modal-body">
+            <div class="input-group">
+
+                <input type="text" class="form-control" placeholder="Üye Adı, Soyadı, TC No veya Telefon no Yazın." id="txt-member-search" />
+                <span class="input-group-addon" >
+                    <button class="btn btn-primary" id="btn-member-search"><span class="fa fa-search"></span> Ara</button>
+
+                </span>
+            </div>
+            
+            <div class="input-group hidden" id="div-member-search-result" >
+                <span class="input-group-addon">Arama Sonuçları</span>
+                <select class="form-control" style="margin:0;padding:0;" id="slc-search-member" >
+                    
+                </select>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+            <button data-dismiss="modal" class="btn btn-danger" id=""><span class="fa fa-close"></span> İptal</button>
+            <button class="btn btn-primary" id="btn-select-member-yes" ><span class="fa fa-save"></span> Seçimi Tamamla</button>
+        </div>
+    </div>
+</div>
+<!--ent modal for selecting book-->
+<<div class="modal modal-dialog modal-danger" id="mdl-select-book" style="position: absolute;">
+    <div class="modal-content ">
+        <div class="modal-header">
+            <h1 class="modal-title">Kiralanacak Kitabı Seçimi Yapın</h1>
+        </div>
+        <div class="modal-body">
+            <div class="input-group">
+
+                <input type="text" class="form-control" placeholder="Kitap Adı veya ISBN yazın." id="txt-search-book" />
+                <span class="input-group-addon">
+                    <button class="btn btn-primary" id="btn-book-search"><span class="fa fa-search"></span> Ara</button>
+
+                </span>
+            </div>
+            <div class="input-group hidden" id="div-book-search-result">
+                <span class="input-group-addon">Arama Sonuçları</span>
+                <select class="form-control" style="margin:0;padding:0;" id="slc-search-book"></select>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button data-dismiss="modal" class="btn btn-danger"><span class="fa fa-close"></span> İptal</button>
+            <button class="btn btn-primary" id="btn-select-book-yes" ><span class="fa fa-save"  ></span> Seçimi Tamamla</button>
+        </div>
+    </div>
+</div>
+
+<!--ent modal for selecting member-->
+<div class="col-md-12">
+    <div class="row">
+        <p>Bu ekrandan yeni üye kaydı yapabilirsiniz.</p>
+
+        <form asp-controller="Rent" asp-action="New" method="post">
+            @Html.HiddenFor(a => a.MemberID, new { @id = "hdn-member-id" })
+            @Html.HiddenFor(a => a.BookID, new { @id = "hdn-book-id" })
+            @Html.AntiForgeryToken()
+            <div class="text-danger" asp-validation-summary="All"></div>
+            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label class="control-label" asp-for="MemberID"></label>
+                    <div class="input-group">
+                        <input class="form-control" placeholder="Üye seçmek için seç butonuna tıklayın." type="text" id="txt-selected-member" disabled />
+                        <span class="input-group-addon">
+                            <button id="btn-select-member" class="btn btn-info">Üye Seç</button>
+
+                        </span>
+                    </div>
+                    <span class="alert-danger" asp-validation-for="MemberID"></span>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" asp-for="BookID"></label>
+                    <div class="input-group">
+                        <input class="form-control" placeholder="Kitap seçmek için seç butonuna tıklayın." type="text" id="txt-selected-book" disabled />
+                        <span class="input-group-addon">
+                            <button id="btn-select-book" class="btn btn-info" type="button">Kitap Seç</button>
+                        </span>
+                    </div>
+                    <span class="alert-danger" asp-validation-for="BookID"></span>
+                </div>
+
+
+            </div>
+
+            <div class="col-md-6 col-sm-6 col-lg-6 col-xs-12">
+                <div class="form-group">
+                    <label class="control-label">Kıraya Başlagıç Tarihi</label>
+                    <div class="input-group">
+                        <span class="input-group-addon">Dossier Request Date*</span>
+                        <select asp-for="StartDay" style="width: 33%">
+                            <option>-gün-</option>
+                            @for (int i = 1; i < 32; i++)
+    {
+        if (i == DateTime.Now.Day)
+        {
+                        <option value="@i.ToString()" selected>@i.ToString()</option>
+}
+else
+{
+                        <option value="@i.ToString()">@i.ToString()</option>
+
+}
+}
+                        </select>
+                        <select asp-for="StartMonth" style="width: 33%">
+                            <option>-ay-</option>
+                            @for (int i = 1; i < 13; i++)
+    {
+        if (i == DateTime.Now.Month)
+        {
+                        <option value="@i.ToString()" selected>@i.ToString()</option>
+}
+else
+{
+                        <option value="@i.ToString()">@i.ToString()</option>
+
+}
+}
+                        </select>
+                        <select asp-for="StartYear" style="width: 33%">
+                            <option>-year-</option>
+                            @for (int i = 2000; i < DateTime.Now.AddYears(25).Year; i++)
+    {
+        if (i == DateTime.Now.Year)
+        {
+                        <option value="@i.ToString()" selected>@i.ToString()</option>
+}
+else
+{
+                        <option value="@i.ToString()">@i.ToString()</option>
+
+}
+}
+                        </select>
+
+                    </div>
+                    @Html.ValidationMessageFor(a => a.StartDay)
+
+                    @Html.ValidationMessageFor(a => a.StartMonth)
+
+                    @Html.ValidationMessageFor(a => a.StartYear)
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" asp-for="RentDayCount"></label>
+                    <input class="form-control" asp-for="RentDayCount" placeholder="Kaç gün kıraya verilecek." type="number" value="" />
+                    <span class="alert-danger" asp-validation-for="RentDayCount"></span>
+                </div>
+            </div>
+            <div class="col-md-12">
+
+                <button class="btn btn-lg btn-primary" type="submit"><span class="fa fa-plus"></span> Kırayı Tamamla</button>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+
+@section scriprt
+    {
+
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/lib/select2/select2.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("select").select2();
+            $("#btn-select-member").click(function () {
+                $("#mdl-select-member").modal("show");
+                $("#div-member-search-result").addClass("hidden");
+                $("#txt-member-search").val("")
+
+            });
+            //search for members button
+            $("#btn-member-search").click(function () {
+                var seachingWord = $("#txt-member-search").val();
+                if (seachingWord == null || seachingWord == "") {
+                    bootbox.alert({ title: "İşlem Başarısız!", message: "Arama yapabilmek için lütfen bir şeyler yazın;" });
+                } else {
+                    $.ajax({
+                        url: "/Member/Search/" + seachingWord,
+                        type: "POST",
+                        dataType: "JSON",
+                        contentType: "application/json",
+                        success: function (r) {
+
+                            var jsonObject = JSON.stringify(r);
+                            var convertedObject = JSON.parse(jsonObject);
+                
+                            bootbox.alert({ title: "İşlem Tamamlandı!", message: convertedObject.message });
+                            if (convertedObject.isSuccess) {
+                                var resultList = convertedObject.data;
+                                $("#slc-search-member").html("");
+                                $("#slc-search-member").val("");
+                                $("#div-member-search-result").removeClass("hidden");
+                                for (var i = 0; i < resultList.length; i++) {
+                                    $("#slc-search-member").append("<option value='" + resultList[i].key + "' >" + resultList[i].value + "</option>");
+                                }
+
+                            }
+
+                        }, error: function(){
+
+                            bootbox.alert({ title: "İşlem Başarısız!", message: "Sunucuya bağlannırken bir hata oluştu!;" });
+                        }
+                    });
+                }
+
+            });
+
+
+
+            //for compleint selecting member
+            $("#btn-select-member-yes").click(function () {
+                
+                var selectedMember = $("#slc-search-member").val();
+                
+                if (selectedMember == null || selectedMember == "") {
+                    bootbox.alert({ title: "İşlem Başarısız!", message: "Lütfen bir üye seçimi yapın!;" });
+                    
+                } else {
+                    $("#hdn-member-id").val(selectedMember);
+                    $("#mdl-select-member").modal("hide");
+                    var selectedMember = $("#slc-search-member").find(":selected").text();
+                    $("#txt-selected-member").val(selectedMember);
+                }
+            });
+            $("#btn-select-book").click(function () {
+                $("#mdl-select-book").modal("show");
+
+            });
+
+
+
+
+            //search for books button
+            $("#btn-book-search").click(function () {
+                var seachingWord = $("#txt-search-book").val();
+                if (seachingWord == null || seachingWord == "") {
+                    bootbox.alert({ title: "İşlem Başarısız!", message: "Arama yapabilmek için lütfen bir şeyler yazın;" });
+                } else {
+                    $.ajax({
+                        url: "/Book/Search/" + seachingWord,
+                        type: "POST",
+                        dataType: "JSON",
+                        contentType: "application/json",
+                        success: function (r) {
+
+                            var jsonObject = JSON.stringify(r);
+                            var convertedObject = JSON.parse(jsonObject);
+
+                            bootbox.alert({ title: "İşlem Tamamlandı!", message: convertedObject.message });
+                            if (convertedObject.isSuccess) {
+                                var resultList = convertedObject.data;
+                                $("#slc-search-book").html("");
+                                $("#slc-search-book").val("");
+                                $("#div-book-search-result").removeClass("hidden");
+                                for (var i = 0; i < resultList.length; i++) {
+                                    $("#slc-search-book").append("<option value='" + resultList[i].key + "' >" + resultList[i].value + "</option>");
+                                }
+
+                            }
+
+                        }, error: function () {
+
+                            bootbox.alert({ title: "İşlem Başarısız!", message: "Sunucuya bağlannırken bir hata oluştu!;" });
+                        }
+                    });
+                }
+
+            });
+
+            //for compleint selecting book
+            $("#btn-select-book-yes").click(function () {
+
+                var selectedMember = $("#slc-search-book").val();
+
+                if (selectedMember == null || selectedMember == "") {
+                    bootbox.alert({ title: "İşlem Başarısız!", message: "Lütfen bir kitap seçimi yapın!;" });
+
+                } else {
+                    $("#hdn-book-id").val(selectedMember);
+                    $("#mdl-select-book").modal("hide");
+                    var selectedMember = $("#slc-search-book").find(":selected").text();
+                    $("#txt-selected-book").val(selectedMember);
+                }
+            });
+        });
+    </script>
+}
+
+@section head
+    {
+
+    <link href="~/lib/select2/select2.css" rel="stylesheet" />
+}

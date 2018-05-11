@@ -1,0 +1,98 @@
+﻿@model AddMemberModel
+@{
+    ViewData["Title"] = "Yeni Üye Kaydı Yapın";
+}
+
+<div class="col-md-12">
+    <div class="row">
+        <p>Bu ekrandan yeni üye kaydı yapabilirsiniz.</p>
+
+        <form asp-controller="Member" asp-action="Add" method="post">
+            @Html.AntiForgeryToken()
+            <div class="text-danger" asp-validation-summary="All"></div>
+            <div class="col-md-6 col-lg-6 col-xs-12">
+                <div class="form-group">
+                    <label class="control-label" asp-for="Name"></label>
+                    <input class="form-control" asp-for="Name" placeholder="Ad soyad girin." type="text" />
+                    <span class="alert-danger" asp-validation-for="Name"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" asp-for="Surname"></label>
+                    <input class="form-control" asp-for="Surname" type="text" placeholder="Üye soyadı girin." />
+                    <span class="alert-danger" asp-validation-for="Surname"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" asp-for="TRIDNo"></label>
+                    <input class="form-control" asp-for="TRIDNo" placeholder="Üye T.C. Kimlik veya Yabancı Kimlik numarası girin." type="tel" />
+                    <span class="alert-danger" asp-validation-for="TRIDNo"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" asp-for="BirthYear"></label>
+                    <input class="form-control" asp-for="BirthYear" placeholder="Üye doğum yılını girin." type="number" />
+                    <span class="alert-danger" asp-validation-for="BirthYear"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" asp-for="isTRCitizen"></label>
+                    <select asp-for="isTRCitizen" class="form-control" style="width:100%;"> 
+                        <option selected value="on">TÜRKİYE CUMHURİYETİ</option>
+                        <option value="off">YABANCI</option>
+                    </select>
+                    <span class="alert-danger" asp-validation-for="isTRCitizen"></span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xs-12">
+                <div class="form-group">
+                    <label class="control-label" asp-for="EMail"></label>
+                    <input class="form-control" asp-for="EMail" placeholder="Üye e posta adresi girin." type="email" />
+                    <span class="alert-danger" asp-validation-for="EMail"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" asp-for="PhoneNumber"></label>
+                    <input class="form-control" asp-for="PhoneNumber" placeholder="Üye telefon numarası girin." type="text" />
+                    <span class="alert-danger" asp-validation-for="PhoneNumber"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" asp-for="MaxRentLimit"></label>
+                    <input class="form-control" asp-for="MaxRentLimit" placeholder="Üye max kitap aklabilme hakkı." type="number" value="1" />
+                    <span class="alert-danger" asp-validation-for="MaxRentLimit"></span>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" name="isAddressVerified">Adres bilgisi ikamet kağıt vb belge ile doğrulandı</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" asp-for="isAwaableToRent">Üye kaydından sonra üyeyi aktif duruma getir.</label>
+                </div>
+                <div class="checkbox">
+                    <label><input type="checkbox" asp-for="isPhonumberVerified">Üye Telefon numarası doğrulandı.</label>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+                <div class="form-group">
+                    <label class="control-label" asp-for="Address"></label>
+                    <textarea class="form-control" asp-for="Address" rows="3" placeholder="Açık adres girin."> </textarea>
+                    <span class="alert-danger" asp-validation-for="Address"></span>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <span class="alert-dark">..</span>
+                <br/>
+                <button class="btn btn-lg btn-primary" type="submit"><span class="fa fa-plus"></span> Üye Kaydı Yap</button>
+            </div>
+         
+        </form>
+    </div>
+</div>
+
+
+@section scriprt
+{
+
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("select").select2();
+
+        });
+    </script>
+}

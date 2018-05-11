@@ -1,0 +1,30 @@
+﻿
+@{
+    if (!User.IsInRole("member"))
+    {
+        ViewData["Title"] = "Ana Sayfa";
+    }
+    else
+    {
+        ViewData["Title"] = "Kiraladıpınız Kitaplar";
+    }
+}
+
+@if (User.IsInRole("member"))
+{
+
+    @await Component.InvokeAsync("MyRents")
+}
+
+
+
+@section scriprt{
+
+<script>
+
+    $(document).ready(function () {
+        $("table").DataTable();
+
+    });
+</script>
+}

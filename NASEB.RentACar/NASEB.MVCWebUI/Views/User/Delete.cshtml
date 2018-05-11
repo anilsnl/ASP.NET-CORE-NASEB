@@ -1,0 +1,16 @@
+﻿@model NASEB.Entities.Concrete.NASEBUser
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<form action="/User/Deletee" method="post">
+    <label>@Model.Name isimli kişiyi silmek istediğiniz emin misiniz ?</label><br />
+    <div hidden class="form-group">
+        <label for="exampleInputEmail1">UserID</label>
+        <input type="text" class="form-control" id="id" name="id" aria-describedby="id" value="@Model.UserID">
+
+    </div>
+
+    <button type="submit" class="btn btn-danger">Sil</button>
+</form>
+

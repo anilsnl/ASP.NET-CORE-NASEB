@@ -1,0 +1,74 @@
+﻿<aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+            <div class="pull-left image">
+                
+                <img src="~/Templates/Admin/Admin/dist/img/sanane.jpg" class="img-circle" />
+            </div>
+            <div class="pull-left info">
+                <p>@User.Claims.FirstOrDefault(a=>a.Type.Equals("FullName")).Value</p>
+                <a href="#"><i class="fa fa-circle text-success"></i> @User.Identity.Name</a>
+            </div>
+        </div>
+        <!-- search form -->
+
+        <!-- /.search form -->
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu" data-widget="tree">
+            <li class="header">YÖNETİM MERKEZİ</li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-circle-o text-aqua"></i> <span>ARAÇ YÖNETİMİ</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="/Car/Index"><i class="fa fa-circle-o"></i>ARAÇLAR</a></li>
+                    <li><a href="/Car/Add"><i class="fa fa-circle-o"></i>YENİ ARAÇ GİRİŞİ</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-circle-o text-green"></i> <span>MÜŞTERİ YÖNETİMİ</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="/Customer/Index"><i class="fa fa-circle-o"></i>MÜŞTERİLER</a></li>
+                    <li><a href="/Customer/Add"><i class="fa fa-circle-o"></i>YENİ MÜŞTERİ GİRİŞİ</a></li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-circle-o text-warning"></i> <span>KİRA YÖNETİMİ</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="/Rent/Index"><i class="fa fa-circle-o"></i>KİRALAR</a></li>
+                    <li><a href="/Rent/Add"><i class="fa fa-circle-o"></i>YENİ KİRA GİRİŞİ</a></li>
+                </ul>
+           
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-circle-o text-danger"></i> <span>KULLANICI YÖNETİMİ</span>
+                    <span class="pull-right-container">
+                        <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="/User/Index"><i class="fa fa-circle-o"></i>KULLANICILAR</a></li>
+                    <li><a href="/User/Add"><i class="fa fa-circle-o"></i>YENİ KULLANICI GİRİŞİ</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </section>
+    <!-- /.sidebar -->
+</aside>

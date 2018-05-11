@@ -1,0 +1,52 @@
+﻿@model IEnumerable<NASEB.Entities.ComplexType.UserBranchView>
+@{
+    ViewData["Title"] = "Kullanıcılar";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">İsim</th>
+            <th scope="col">Soyisim</th>
+            <th scope="col">E Posta</th>
+            <th scope="col">Telefon Numarası</th>
+            <th scope="col">Adres</th>
+            <th scope="col">Doğum Tarihi</th>
+            <th scope="col">Şube</th>
+            <th scope="col">Kayıt Tarihi</th>
+            <th scope="col">Şifre</th>
+            <th scope="col">Düzenle</th>
+            <th scope="col">Sil</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>@item.Name</td>
+                <td>@item.Surname</td>
+                <td>@item.EMail</td>
+                <td>@item.PhoneNumber</td>
+                <td>@item.Address</td>
+                <td>@item.BirthDate</td>
+                <td>@item.BranchName</td>
+                <td>@item.RegisterDate</td>
+                <td>@item.PasswordHash</td>
+                <td><a href="/User/Edit/@item.UserID" class="btn btn-primary">Düzenle</a></td>
+                <td><a href="/User/Delete/@item.UserID" class="btn btn-danger">Sil</a></td>
+
+            </tr>
+
+        }
+    </tbody>
+</table>
+@section scriprt{
+    <script>
+    $(document).ready(function() {
+        $("table").DataTable();
+    });
+    </script>
+}
+
+

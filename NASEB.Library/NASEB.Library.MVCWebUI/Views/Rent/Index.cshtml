@@ -1,0 +1,222 @@
+﻿@model IEnumerable<NASEB.Entities.ComplexType.RentOverviewView>
+
+@{
+    ViewData["Title"] = "Genel Bakış";
+}
+
+<!--modal for complete rentimh-->
+
+<div class="modal modal-dialog modal-primary" id="mdl-complete-renting" style="position:absolute;">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-title">Kiralamayı Tamamla</h2>
+        </div>
+        <div class="modal-body">
+
+            <b id="b-detail"></b>
+            <br />
+            <p>Yukarıdaki verilen bilgiler doğrultusunda kiralama tamamlansın mı?</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn btn-default"><span class="fa fa-close"></span>Kapat</button>
+            <button type="button" id="btn-renting-complete-yes" class="btn btn-danger"><span class="fa fa-save"></span> Kiralama Sürecidi Tamamla</button>
+        </div>
+    </div>
+</div>
+
+<!--modal for expanding rent day-->
+
+<div class="modal modal-dialog modal-primary" id="mdl-expand-day" style="position:absolute;">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-title">Kiralama Süresini Uzatın</h2>
+        </div>
+        <div class="modal-body">
+
+            <b id="b-detail"></b>
+            <br />
+            <p>Kıralama süresinin kaç gün uzatılacağını seçin.</p>
+            <div class="input-group">
+                <span class="input-group-addon">Gün</span>
+                <input type="number"  value="" class="form-control"  id="txt-day" placeholder="Uzatılacak gün sayısını girin..."/>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn btn-default"><span class="fa fa-close"></span>Kapat</button>
+            <button type="button" id="btn-renting-day-yes" class="btn btn-danger"><span class="fa fa-save"></span> Kiralama Süresini Uzat</button>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="col-md-12 col-xs-12 col-lg-12 col-sm-12">
+    <div class="row">
+        <p>Bu ekranda son 7 gün içersinde tamamlana ve aktif durumda olan kiralamaları görebilirsiniz.</p>
+    </div>
+    <div class="row">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Üye Adı Soyadı</th>
+                    <th>Kitap Adı</th>
+                    <th>Başlangıç Tarihi</th>
+                    <th>Beklenen Sonlandma Tarihi</th>
+                    <th>Durum</th>
+                    <th>İletişim</th>
+                    <th>Yönet</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @item.MemberNameSurname
+                        </td>
+                        <td>
+                            @item.BookName
+                        </td>
+                        <td>
+                            @item.StartDate.ToString("dd/MM/yyyy")
+                        </td>
+                        <td>
+                            @item.ExpactedEndDate.ToString("dd/MM/yyyy")
+                        </td>
+
+                        <td>
+                            @item.Status
+                        </td>
+                        <td>
+                            @item.MemberPhoneNumber
+                        </td>
+
+                        <td>
+                            @if (!item.isRentingCompleted)
+                            {
+                                <button type="button" class="btn btn-sm btn-dark btn-sm btn-expand-renting" data-id="@item.RentID" data-detail="Kitap: @item.BookName Üye:@item.MemberNameSurname" >Süreyi Uzat</button>
+                                <button class="btn btn-sm btn-danger btn-sm btn-complete-renting" data-id="@item.RentID" data-detail="Kitap: @item.BookName Üye:@item.MemberNameSurname">Kiralamayı Tamamla</button>
+                            }
+                       
+                            <button data-id="@item.RentID" data-name="@item.MemberNameSurname - @item.BookName" class="btn btn-danger btn-sm btn-delete" type="button" ><span class="fa fa-trash"></span> Sil</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+@section scriprt{
+    <script>
+        $(document).ready(function () {
+            $("table").DataTable();
+            $(".btn-complete-renting").click(function () {
+                $("#mdl-complete-renting").modal("show");
+                var detail = $(this).data("detail");
+                var rentID = $(this).data("id");
+                $("#b-detail").html(detail);
+
+                $("#btn-renting-complete-yes").click(function () {
+                    $.ajax({
+                        type: "POST",
+                        url: "/Rent/Complete/" + rentID,
+                        dataType: "JSON",
+                        contentType: "application/json",
+                        success: function (r) {
+                            bootbox.alert({
+                                title: "İşlem Tamamlandı",
+                                message: r.message,
+                                callback: function () {
+                                    if (r.isSuccess) {
+                                        window.location = "/Rent/";
+                                    }
+
+                                }
+                            });
+
+                        }, error: function () {
+                            bootbox.alert({ title: "İşlem başarısız", message: "Sunucuya bağlanırken bir hata oluştu!" });
+
+                        }
+                    });
+                });
+
+                
+            });
+
+        });
+        $(".btn-expand-renting").click(function () {
+            $("#mdl-expand-day").modal("show");
+            var _rentID = $(this).data("id");
+
+            $("#btn-renting-day-yes").click(function(){
+                var _day = $("#txt-day").val();
+                var model = {
+                    rentID: _rentID,
+                    day: _day
+                };
+             
+                $.ajax({
+                    url: "/Rent/ExpandDay?day=" + _day + "&id=" + _rentID,
+                    type: "POST",
+                 //   data: JSON.stringify(model),
+                    dataType: "JSON",
+                    contentType: "application/json",
+                    success: function (r) {
+
+                        bootbox.alert({
+                            title: "İşlem Tamamlandı", message: r.message, callback: function () {
+                                if (r.isSuccess) {
+                                    window.location = "/Rent/";
+                                }
+                            }
+                        });
+
+                    }, error: function () {
+                        bootbox.alert({ title: "İşlem Başarısız", message: "Sunucuya ulaşırken bir hata oluştu!" });
+                    }
+                });
+            });
+        });
+
+        //deleting rents
+        $(".btn-delete").click(function () {
+            var id = $(this).data("id");
+            var name = $(this).data("name");
+            bootbox.confirm({
+                title: "Kirayı Sil",
+                message: "<b>" + name + "<b/><br/>Yukarıda verilen kira silinsin mi?",
+                callback: function (r) {
+                    if (r) {
+                        $.ajax({
+                            type: "POST",
+                            url: "/Rent/Delete/" + id,
+                            dataType: "JSON",
+                            contentType: "application/json",
+                            success: function (s) {
+                                bootbox.alert({
+                                    title: "İşlem Tamamlandı",
+                                    message: s.message,
+                                    callback: function () {
+                                        if (s.isSuccess) {
+                                            window.location = "/Rent/";
+                                        }
+
+                                    }
+                                });
+
+                            }, error: function () {
+                                bootbox.alert({ title: "İşlem başarısız", message: "Sunucuya bağlanırken bir hata oluştu!" });
+
+                            }
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+
+}

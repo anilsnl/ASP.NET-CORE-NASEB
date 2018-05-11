@@ -1,0 +1,24 @@
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Entities\bin\Release\netcoreapp2.0\NASEB.Library.Entities.deps.json
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Entities\bin\Release\netcoreapp2.0\NASEB.Library.Entities.dll
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Entities\bin\Release\netcoreapp2.0\NASEB.Library.Entities.pdb
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Entities\bin\Release\netcoreapp2.0\Newtonsoft.Json.dll
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Entities\bin\Release\netcoreapp2.0\Newtonsoft.Json.xml
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Entities\obj\Release\netcoreapp2.0\NASEB.Library.Entities.csprojResolveAssemblyReference.cache
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Entities\obj\Release\netcoreapp2.0\NASEB.Library.Entities.csproj.CoreCompileInputs.cache
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Entities\obj\Release\netcoreapp2.0\NASEB.Library.Entities.AssemblyInfoInputs.cache
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Entities\obj\Release\netcoreapp2.0\NASEB.Library.Entities.AssemblyInfo.cs
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Entities\obj\Release\netcoreapp2.0\NASEB.Library.Entities.csproj.CopyComplete
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Entities\obj\Release\netcoreapp2.0\NASEB.Library.Entities.dll
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Entities\obj\Release\netcoreapp2.0\NASEB.Library.Entities.pdb
+D:\aa\NASEB.Library\NASEB.Library.Entities\bin\Release\netcoreapp2.0\NASEB.Library.Entities.deps.json
+D:\aa\NASEB.Library\NASEB.Library.Entities\bin\Release\netcoreapp2.0\NASEB.Library.Entities.dll
+D:\aa\NASEB.Library\NASEB.Library.Entities\bin\Release\netcoreapp2.0\NASEB.Library.Entities.pdb
+D:\aa\NASEB.Library\NASEB.Library.Entities\bin\Release\netcoreapp2.0\Newtonsoft.Json.dll
+D:\aa\NASEB.Library\NASEB.Library.Entities\bin\Release\netcoreapp2.0\Newtonsoft.Json.xml
+D:\aa\NASEB.Library\NASEB.Library.Entities\obj\Release\netcoreapp2.0\NASEB.Library.Entities.csprojResolveAssemblyReference.cache
+D:\aa\NASEB.Library\NASEB.Library.Entities\obj\Release\netcoreapp2.0\NASEB.Library.Entities.csproj.CoreCompileInputs.cache
+D:\aa\NASEB.Library\NASEB.Library.Entities\obj\Release\netcoreapp2.0\NASEB.Library.Entities.AssemblyInfoInputs.cache
+D:\aa\NASEB.Library\NASEB.Library.Entities\obj\Release\netcoreapp2.0\NASEB.Library.Entities.AssemblyInfo.cs
+D:\aa\NASEB.Library\NASEB.Library.Entities\obj\Release\netcoreapp2.0\NASEB.Library.Entities.csproj.CopyComplete
+D:\aa\NASEB.Library\NASEB.Library.Entities\obj\Release\netcoreapp2.0\NASEB.Library.Entities.dll
+D:\aa\NASEB.Library\NASEB.Library.Entities\obj\Release\netcoreapp2.0\NASEB.Library.Entities.pdb

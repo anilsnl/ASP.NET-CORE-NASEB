@@ -1,0 +1,67 @@
+﻿@model IEnumerable<NASEB.Entities.ComplexType.CarBranchView>
+@{
+            ViewData["Title"] = "Arabalar";
+        }
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Araç Adı</th>
+            <th scope="col">Detay Bilgi</th>
+            <th scope="col">Şube Adı</th>
+            <th scope="col">Lisans NO</th>
+            <th scope="col">Plaka</th>
+            <th scope="col">Durum</th>
+            <th scope="col">Kayıt Tarihi</th>
+            <th scope="col">Düzenle</th>
+            <th scope="col">Sil</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.CarName</td>
+            <td>@item.Details</td>
+            <td>@item.BranchName</td>
+            <td>@item.LicenseInfo</td>
+            <td>@item.Plate</td>
+            @{
+                if (item.Status==1)
+                {
+            <td>Kiralanabilir</td>
+
+                }
+                else if (item.Status == 0)
+                {
+                    <td>Tamirde</td>
+                }
+                else if (item.Status == 2)
+                {
+                    <td>Kiralanmış Durumda</td>
+
+                }
+                else
+                {
+                    <td> - </td>
+
+                }
+            }
+
+            <td>@item.RegisterDate</td>
+            <td><a href="/Car/Edit/@item.CarID" class="btn btn-primary">Düzenle</a></td>
+            <td><a href="/Car/Delete/@item.CarID" class="btn btn-danger">Sil</a></td>
+        </tr>
+
+        }
+    </tbody>
+</table>
+@section scriprt{
+<script>
+    $(document).ready(function() {
+        $("table").DataTable();
+    });
+</script>
+}
+
+

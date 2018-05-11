@@ -1,0 +1,122 @@
+﻿@model IEnumerable<User>
+@{
+    ViewData["Title"] = "Kullanıcılar";
+}
+
+<div class="modal modal-dialog modal-danger modal-lg" id="mdl-reset-password" style="position:absolute;" > 
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-title"><b id="b-reset-name"></b>  için Parolayı Sıfırla</h2>
+        </div>
+        <div class="modal-body">
+            <div class="input-group">
+                <span class="input-group-addon">Yeni Parola</span>
+                <input id="txt-rp-new" class="form-control" placeholder="Yeni parolayı girin..." type="password" />
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon">Yeni Parola Tekrar</span>
+                <input id="txt-rp-confirm" class="form-control" placeholder="Yeni parolayı tekrar girin..." type="password" />
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-default" data-dismiss="modal" ><span class="fa fa-close"></span>Vazgeç</button>
+            <button class="btn btn-danger" id="btn-reset-password-yes"><span class="fa fa-save"></span> Parolayı Sıfırla</button>
+        </div> 
+    </div>
+</div>
+
+<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+    <div class="row">
+        <table class="table" id="tbl-users">
+            <thead>
+                <tr>
+                    <th>Adı Soyadı</th>
+                    <th>E Posta</th>
+                    <th>Parolayı Sıfırla</th>
+                    <th>Rolleri Düzenle</th>
+                    <th>Kullanıcıyı Düzenle</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if(Model==null||Model.Count()==0)
+                {
+
+                    <tr>
+                        <td colspan="4"></td>
+                    </tr>
+                }
+                else
+                {
+                    foreach (var item in Model)
+                    {
+                    <tr>
+                        <td>@item.NameSurname</td>
+                        <td>@item.EMail</td>
+                        <td>
+                            <button class="btn btn-danger btn-sm btn-reset-user" data-id="@item.UserID" data-name="@item.NameSurname"> <span class="fa fa-lock"></span> Sıfırla</button>
+                        </td>
+                        <td>
+                           <button class="btn btn-dark btn-sm btn-edit-user"> <span class="fa fa-list"></span> Rolleri Düzenle</button>
+                        </td>
+                        <td>
+                            <a href="/User/Edit/@item.UserID" class="btn btn-primary btn-sm"><span class="fa fa-edit"></span> Düzenle</a>
+                        </td>
+                    </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+@section scriprt
+{ 
+    <script>
+        $(document).ready(function () {
+            $(".btn-reset-user").click(function () {
+                var uName = $(this).data("name");
+                var uID = $(this).data("id");
+                $("#mdl-reset-password").modal("show");
+                $("#b-reset-name").html(uName);
+
+                $("#btn-reset-password-yes").click(function () {
+                    var newPass = $("#txt-rp-new").val();
+                    var confirmPass = $("#txt-rp-confirm").val();
+                    var userID = uID;
+                    if (newPass == null || newPass == "" || confirmPass == null || confirmPass == "") {
+                        bootbox.alert({ title: "İşlem Başarısız", message: "Lütfen zorunlu alanları doldurun!" });
+
+                    } else {
+
+                        var model = {
+                            UserID: uID,
+                            NewPassword: newPass,
+                            ConfirmPassword: confirmPass
+                        };
+                        var ajaxData = JSON.stringify(model);
+                         
+                        $.ajax({
+                            type: 'POST',
+                            url: '/User/ResetPassword?NewPassword=' + newPass + '&ConfirmPassword=' + confirmPass + '&id=' + userID,                            
+                            dataType: 'json',
+                         //   data: ajaxData,
+                            contentType: 'application/json; charset=utf-8',
+                            success: function (r) {
+                                if (r.isSuccess) {
+                                    bootbox.alert({ title: "İşlem Başarısız", message: r.message });
+                                }
+
+                            }, error: function () {
+                                bootbox.alert({ title: "İşlem Başarısız", message: "Sunucuya bağlanırken bir hata oluştu!" });
+
+                            }
+                        });
+                    }
+                   
+                });
+            });
+            $("#tbl-users").DataTable();
+        });
+    </script>
+}

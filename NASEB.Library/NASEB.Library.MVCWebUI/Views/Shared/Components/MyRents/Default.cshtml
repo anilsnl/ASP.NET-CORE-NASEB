@@ -1,0 +1,50 @@
+﻿@model IEnumerable<NASEB.Entities.ComplexType.RentOverviewView>
+
+
+
+
+<div class="col-md-12 col-xs-12 col-lg-12 col-sm-12">
+    <div class="row">
+        <p>Bu ekranda son 7 gün içersinde tamamlana ve aktif durumda olan kiralamaları görebilirsiniz.</p>
+    </div>
+    <div class="row">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Üye Adı Soyadı</th>
+                    <th>Kitap Adı</th>
+                    <th>Başlangıç Tarihi</th>
+                    <th>Beklenen Sonlandma Tarihi</th>
+                    <th>Durum</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @item.MemberNameSurname
+                        </td>
+                        <td>
+                            @item.BookName
+                        </td>
+                        <td>
+                            @item.StartDate.ToString("dd/MM/yyyy")
+                        </td>
+                        <td>
+                            @item.ExpactedEndDate.ToString("dd/MM/yyyy")
+                        </td>
+
+                        <td>
+                            @item.Status
+                        </td>
+
+
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

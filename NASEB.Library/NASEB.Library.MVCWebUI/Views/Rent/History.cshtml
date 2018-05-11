@@ -1,0 +1,97 @@
+﻿@model IEnumerable<NASEB.Entities.ComplexType.RentHistoryView>
+
+@{
+    ViewData["Title"] = "Yıllara Göre Kira Kayıtları";
+}
+
+
+<div class="col-md-12">
+    <div class="row">
+        <div class="input-group">
+            <form action="/Rent/History" method="get">
+                <input type="number" name="id" max="@DateTime.Now.Year" min="2000" class="form-control" placeholder="yıl girin" name="id" />
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-primary">Getir</button>
+                </div>
+               
+            </form>
+        </div>
+    </div>
+    <br />
+    <div class="row">
+        <table class="table table-responsive">
+            <thead>
+                <tr>
+                    <th>
+                        Üye Adı
+                    </th>
+
+
+                    <th>
+                        Kiralanan Kitap
+                    </th>
+                    <th>
+                        Sistem Kayıt Bilgileri
+                    </th>
+                    <th>
+                        Son Değişiklik
+                    </th>
+                    <th>
+                        Durum
+                    </th>
+                    <th>
+                        Gecikme Cezası
+                    </th>
+                    <th>
+                        Kayıt Yılı
+                    </th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MemberName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BookName)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedInfo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastUpdatedInfo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Durum)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.DelayFine)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RegistereedYear)
+                </td>
+
+
+            </tr>
+}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+@section scriprt{ 
+
+<script>
+    $(document).ready(function () {
+        $("table").DataTable();
+        $("select").select2();
+    });
+</script>
+}
+

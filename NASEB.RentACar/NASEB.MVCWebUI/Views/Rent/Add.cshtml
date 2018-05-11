@@ -1,0 +1,82 @@
+﻿@model IEnumerable<NASEB.Entities.Concrete.Company>
+@{
+    ViewData["Title"] = "Kiralama İşlemi Ekle";
+}
+
+<form method="post" action="/Rent/Add">
+   
+    <div class="form-group">
+        <label for="exampleInputEmail1">Müşteri</label>
+        <select class="form-control" id="CustomerID" name="CustomerID">
+            <option selected>Lütfen Müşteri Seçiniz...</option>
+            @foreach (var item in ViewBag.customer)
+            {
+                <option value="@item.CustomerID">@item.Name @item.Surname</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Hasar Miktarı</label>
+        <input type="text" class="form-control" id="DamagePrice" name="DamagePrice" aria-describedby="DamagePrice" placeholder="Hasar Miktarı Giriniz...">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Delay Miktari</label>
+        <input type="text" class="form-control" id="DelayFine" name="DelayFine" aria-describedby="DelayFine" placeholder="Delay Miktarı Giriniz...">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Kiralanan Şube</label>
+        <select class="form-control" id="RentBranchID" name="RentBranchID">
+            <option selected>Lütfen Şube Seçiniz...</option>
+            @foreach (var item in ViewBag.branch)
+            {
+                <option value="@item.BranchID">@item.BranchName</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Alınan Şube</label>
+        <select class="form-control" id="BranchID" name="BranchID">
+            <option selected>Lütfen Şube Seçiniz...</option>
+            @foreach (var item in ViewBag.branch)
+            {
+                <option value="@item.BranchID">@item.BranchName</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Araba</label>
+        <select class="form-control" id="CarID" name="CarID">
+            <option selected>Lütfen Araba Seçiniz...</option>
+            @foreach (var item in ViewBag.car)
+            {
+                <option value="@item.CarID">@item.CarName - @item.Plate</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Toplam Kiralama Bedeli</label>
+        <input type="text" class="form-control" id="TotalRentPrice" name="TotalRentPrice" aria-describedby="TotalRentPrice" placeholder="Toplam Kiralama Bedeli Giriniz...">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Kalan Kiralama Bedeli</label>
+        <input type="text" class="form-control" id="RemainDebt" name="RemainDebt" aria-describedby="RemainDebt" placeholder="Kalan Kiralama Bedeli Giriniz...">
+
+    </div>
+
+    <div hidden class="form-group">
+        <label for="exampleInputEmail1">User ID</label>
+        <input type="text" class="form-control" id="UserID" name="UserID" aria-describedby="UserID" value="@ViewBag.user">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Kaç Günlük Kiralık</label>
+        <input type="text" class="form-control" id="howManyDays" name="HowManyDays" aria-describedby="HowManyDays" placeholder="Kaç Günlük Kiralanacağını Giriniz...">
+
+    </div>
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>
+

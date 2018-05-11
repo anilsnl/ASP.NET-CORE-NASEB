@@ -1,0 +1,44 @@
+﻿@model AddNewUserModel
+@{
+    ViewData["Title"] = "Yeni Kullanıcı Kaydı";
+}
+
+<div class="col-md-12">
+    <div class="row">
+        <p>Bu ekranı kullanarak sistme yeni kullanıcılar ekleyebilirsiniz.</p>
+        <form asp-controller="User" asp-action="Add" method="post">
+            <div class="alert-danger" asp-validation-summary="All"></div>
+            <div class="form-group">
+                <label class="control-label" asp-for="NameSurname"></label>
+                <input class="form-control" asp-for="NameSurname" placeholder="Ad soyad girin." type="text" />
+                <span class="alert-danger" asp-validation-for="NameSurname"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label" asp-for="EMail"></label>
+                <input class="form-control" asp-for="EMail" type="text" placeholder="E Posta girin." />
+                <span class="alert-danger" asp-validation-for="EMail"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label" asp-for="Password"></label>
+                <input class="form-control" asp-for="Password" placeholder="Parola girin" type="password" />
+                <span class="alert-danger" asp-validation-for="Password"></span>
+            </div>
+            <div class="form-group">
+                <label class="control-label" asp-for="ConfirmPassword"></label>
+                <input class="form-control" asp-for="ConfirmPassword" placeholder="Parolayı tekrar girin." type="password" />
+                <span class="alert-danger" asp-validation-for="ConfirmPassword"></span>
+            </div>
+            <span class="alert-dark">Rol yenitimini kullanı kaydından sonra yapabilirsiniz.</span>
+            <br />
+            <button class="btn btn-lg btn-primary" type="submit"><span class="fa fa-plus"></span> Yeni Kullanıcı Kaydet</button>
+        </form>
+    </div>
+</div>
+
+
+@section scriprt
+    {
+
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+}

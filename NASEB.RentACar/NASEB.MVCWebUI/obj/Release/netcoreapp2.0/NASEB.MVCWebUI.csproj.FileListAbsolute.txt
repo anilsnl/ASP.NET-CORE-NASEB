@@ -1,0 +1,40 @@
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.MVCWebUI\bin\Release\netcoreapp2.0\NASEB.MVCWebUI.deps.json
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.MVCWebUI\bin\Release\netcoreapp2.0\NASEB.MVCWebUI.runtimeconfig.json
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.MVCWebUI\bin\Release\netcoreapp2.0\NASEB.MVCWebUI.runtimeconfig.dev.json
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.MVCWebUI\bin\Release\netcoreapp2.0\NASEB.MVCWebUI.dll
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.MVCWebUI\bin\Release\netcoreapp2.0\NASEB.MVCWebUI.pdb
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.MVCWebUI\bin\Release\netcoreapp2.0\NASEB.DAL.dll
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.MVCWebUI\bin\Release\netcoreapp2.0\NASEB.Entities.dll
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.MVCWebUI\bin\Release\netcoreapp2.0\NASEB.Helper.dll
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.MVCWebUI\bin\Release\netcoreapp2.0\NASEB.Services.dll
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.MVCWebUI\bin\Release\netcoreapp2.0\NASEB.DAL.pdb
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.MVCWebUI\bin\Release\netcoreapp2.0\NASEB.Entities.pdb
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.MVCWebUI\bin\Release\netcoreapp2.0\NASEB.Helper.pdb
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.MVCWebUI\bin\Release\netcoreapp2.0\NASEB.Services.pdb
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.MVCWebUI\obj\Release\netcoreapp2.0\NASEB.MVCWebUI.csprojResolveAssemblyReference.cache
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.MVCWebUI\obj\Release\netcoreapp2.0\NASEB.MVCWebUI.csproj.CoreCompileInputs.cache
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.MVCWebUI\obj\Release\netcoreapp2.0\NASEB.MVCWebUI.AssemblyInfoInputs.cache
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.MVCWebUI\obj\Release\netcoreapp2.0\NASEB.MVCWebUI.AssemblyInfo.cs
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.MVCWebUI\obj\Release\netcoreapp2.0\NASEB.MVCWebUI.csproj.CopyComplete
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.MVCWebUI\obj\Release\netcoreapp2.0\NASEB.MVCWebUI.dll
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.MVCWebUI\obj\Release\netcoreapp2.0\NASEB.MVCWebUI.pdb
+D:\aa\NASEB\NASEB.MVCWebUI\bin\Release\netcoreapp2.0\NASEB.MVCWebUI.deps.json
+D:\aa\NASEB\NASEB.MVCWebUI\bin\Release\netcoreapp2.0\NASEB.MVCWebUI.runtimeconfig.json
+D:\aa\NASEB\NASEB.MVCWebUI\bin\Release\netcoreapp2.0\NASEB.MVCWebUI.runtimeconfig.dev.json
+D:\aa\NASEB\NASEB.MVCWebUI\bin\Release\netcoreapp2.0\NASEB.MVCWebUI.dll
+D:\aa\NASEB\NASEB.MVCWebUI\bin\Release\netcoreapp2.0\NASEB.MVCWebUI.pdb
+D:\aa\NASEB\NASEB.MVCWebUI\bin\Release\netcoreapp2.0\NASEB.DAL.dll
+D:\aa\NASEB\NASEB.MVCWebUI\bin\Release\netcoreapp2.0\NASEB.Entities.dll
+D:\aa\NASEB\NASEB.MVCWebUI\bin\Release\netcoreapp2.0\NASEB.Helper.dll
+D:\aa\NASEB\NASEB.MVCWebUI\bin\Release\netcoreapp2.0\NASEB.Services.dll
+D:\aa\NASEB\NASEB.MVCWebUI\bin\Release\netcoreapp2.0\NASEB.DAL.pdb
+D:\aa\NASEB\NASEB.MVCWebUI\bin\Release\netcoreapp2.0\NASEB.Entities.pdb
+D:\aa\NASEB\NASEB.MVCWebUI\bin\Release\netcoreapp2.0\NASEB.Helper.pdb
+D:\aa\NASEB\NASEB.MVCWebUI\bin\Release\netcoreapp2.0\NASEB.Services.pdb
+D:\aa\NASEB\NASEB.MVCWebUI\obj\Release\netcoreapp2.0\NASEB.MVCWebUI.csprojResolveAssemblyReference.cache
+D:\aa\NASEB\NASEB.MVCWebUI\obj\Release\netcoreapp2.0\NASEB.MVCWebUI.csproj.CoreCompileInputs.cache
+D:\aa\NASEB\NASEB.MVCWebUI\obj\Release\netcoreapp2.0\NASEB.MVCWebUI.AssemblyInfoInputs.cache
+D:\aa\NASEB\NASEB.MVCWebUI\obj\Release\netcoreapp2.0\NASEB.MVCWebUI.AssemblyInfo.cs
+D:\aa\NASEB\NASEB.MVCWebUI\obj\Release\netcoreapp2.0\NASEB.MVCWebUI.csproj.CopyComplete
+D:\aa\NASEB\NASEB.MVCWebUI\obj\Release\netcoreapp2.0\NASEB.MVCWebUI.dll
+D:\aa\NASEB\NASEB.MVCWebUI\obj\Release\netcoreapp2.0\NASEB.MVCWebUI.pdb

@@ -1,0 +1,50 @@
+﻿@model CustomerModel
+@{
+    ViewData["Title"] = "Müşteri Ekle";
+}
+
+<form method="post" action="/Customer/Add">
+    @Html.AntiForgeryToken()
+    <div class="text-danger" asp-validation-summary="All">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">İsim</label>
+        <input type="text" class="form-control" asp-for="CustomerName" aria-describedby="CustomerName" placeholder="İsim Giriniz...">
+        <span asp-validation-for="CustomerName"></span>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Soyisim</label>
+        <input type="text" class="form-control" asp-for="CustomerSurname" aria-describedby="CustomerSurname" placeholder="Soyisim Giriniz...">
+        <span asp-validation-for="CustomerSurname"></span>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">T.C Kimlik NO</label>
+        <input type="text" class="form-control" asp-for="TRIDNO" value="" aria-describedby="TRIDNO" placeholder="TRIDNo Giriniz...">
+        <span asp-validation-for="TRIDNO"></span>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Adresi</label>
+        <input type="text" class="form-control" asp-for="Adress" aria-describedby="Adress" placeholder="Adres Giriniz...">
+        <span asp-validation-for="Adress"></span>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Telefon No</label>
+        <input type="text" class="form-control" asp-for="PhoneNumber" aria-describedby="PhoneNumber" placeholder="Telefon No Giriniz...">
+        <span asp-validation-for="PhoneNumber"></span>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Doğum Yılı</label>
+        <input type="text" class="form-control" asp-for="BirthDate" value="" aria-describedby="BirthDate" placeholder="Doğum Yılını Giriniz...">
+        <span asp-validation-for="BirthDate"></span>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Pasaport NO</label>
+        <input type="text" class="form-control" asp-for="PasaportNumber"  aria-describedby="PasaportNumber" placeholder="Pasaport NO Giriniz...">
+
+    </div>
+  @Html.HiddenFor(a=>a.UserID)
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>
+

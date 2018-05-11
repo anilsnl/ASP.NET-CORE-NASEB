@@ -1,0 +1,133 @@
+﻿@model IEnumerable<Member>
+@{
+    ViewData["Title"] = "Kayıtlı Üyeler";
+}
+
+
+<div id="tbl-members" class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+    <div class="row">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Adı</th>
+                    <th>Soyadı</th>
+                    <th>T.C. Kimlik No</th>
+                    <th>Doğum Yılı</th>
+                  
+                    <th>Toplam/Kalan Hak</th>
+
+                    <th>Durum</th>
+                    <th>Cep Telefonu</th>
+                    <th>E Posta</th>
+                    <th>Adres</th>
+                    <th>Yönet</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Count() != 0)
+    {
+        foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Surname</td>
+                <td>@item.TRIDNo</td>
+                <td>@item.BirthDate.Year</td>
+                <td>
+                    <p>
+                        <b>@item.TotalRentConut</b> toplam haktan <b>@item.RemainedRentConut</b> hak kaldı
+                    </p>
+                </td>
+                <td>
+                    <p>
+                        @if (item.isTRCitezen)
+            {
+                <span>T.C. Vatandaş </span>
+                @if (item.isTRIDCitizenVerfied)
+    {
+            <span>T.C. Doğrulandı</span>
+}
+}
+else
+{
+            <span>Yabancı Uyruklu</span>
+}
+
+
+                    </p>
+                </td>
+                <td>
+                    @item.PhoneNumber - @item.isPhoneNumberVerified
+                </td>
+                <td>
+                    @item.EMail - @item.isEMailVerified
+                </td>
+                <td>
+                    @item.Address - @item.isAddressVerified
+                </td>
+                <td>
+                    <div class="btn-group-sm">
+                        <a href="/Member/Edit/@item.MemberID" class="btn btn-sm btn-primary"><span class="fa fa-edit"></span> Düzenle</a>
+                        <button data-id="@item.MemberID" data-name="@item.Name @item.Surname" class="btn btn-danger btn-delete btn-sm"><span class="fa fa-trash"></span> Üye Sil</button>
+                    </div>
+                </td>
+            </tr>
+}
+}
+else
+{
+            <tr>
+                <td colspan="7">Hiç Kayıtlı Üye Yok</td>
+            </tr>
+}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+@section scriprt{ 
+    <script>
+        $(document).ready(function () {
+            $("table").DataTable();
+
+
+            //deleting members
+            $(".btn-delete").click(function () {
+                var id = $(this).data("id");
+                var name = $(this).data("name");
+                bootbox.confirm({
+                    title: "Kirayı Sil",
+                    message: "<b>" + name + "<b/><br/>Yukarıda verilen kira silinsin mi?",
+                    callback: function (r) {
+                        if (r) {
+                            $.ajax({
+                                type: "POST",
+                                url: "/Member/Delete/" + id,
+                                dataType: "JSON",
+                                contentType: "application/json",
+                                success: function (s) {
+                                    bootbox.alert({
+                                        title: "İşlem Tamamlandı",
+                                        message: s.message,
+                                        callback: function () {
+                                            if (s.isSuccess) {
+                                                window.location = "/Meber/";
+                                            }
+
+                                        }
+                                    });
+
+                                }, error: function () {
+                                    bootbox.alert({ title: "İşlem başarısız", message: "Sunucuya bağlanırken bir hata oluştu!" });
+
+                                }
+                            });
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+
+}

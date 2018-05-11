@@ -1,0 +1,17 @@
+{
+  "name": "Jquery",
+  "homepage": "https://github.com/jquery/jquery",
+  "version": "3.3.1",
+  "_release": "3.3.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "3.3.1",
+    "commit": "32b00373b3f42e5cdcb709df53f3b08b7184a944"
+  },
+  "_source": "https://github.com/jquery/jquery.git",
+  "_target": "3.3.1"
+}   "commit": "f852e631ba85af7da4ad7594785e122504e7b233"
+  },
+  "_source": "https://github.com/jquery/jquery-dist.git",
+  "_target": "~2.0.3"
+}

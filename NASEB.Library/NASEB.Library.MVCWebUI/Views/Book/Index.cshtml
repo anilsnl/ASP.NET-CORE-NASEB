@@ -1,0 +1,106 @@
+﻿@model IEnumerable<MainBookListView>
+@{
+    if (ViewData["XTitle"] != null)
+    {
+        ViewData["Title"] = ViewData["XTitle"];
+    }
+    else
+    {
+
+        ViewData["Title"] = "Kitaplar";
+    }
+
+}
+
+
+<div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+    <div class="row">
+        <table id="tbl-book" class="table table-responsive">
+            <thead>
+                <tr>
+                    <th>Kitap Adı</th>
+                    <th>Yayınavi</th>
+                    <th>Tür</th>
+                    <th>ISBN</th>
+                    <th>Yazarlar</th>
+                    <th>Ekleme/Günceleme Tarihi</th>
+                    <th>Toplam/Uygun Adet</th>
+                    <th>Yönetim</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.Count() == 0)
+                {
+                    <tr>
+                        <td colspan="8">Kayıtlı Kitap Bulunamadı</td>
+                    </tr>
+                }
+                else
+                {
+                    foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.BookName</td>
+                            <td>@item.PublisherName</td>
+                            <td>@item.BookTypeNanme</td>
+                            <td>@item.ISBN</td>
+                            <td>--</td>
+                            <td>@item.Creaded_UpdatedDate</td>
+                            <td>@item.TotalCount / @item.AwailableQuantity</td>
+                            <td>
+                                <a href="/Book/Edit/@item.BookID" class="btn btn-primary btn-sm "><span class="fa fa-edit fa-sm"></span> Düzenle</a>
+                                <button data-id="@item.BookID" data-name="@item.BookName" type="button" class="btn btn-sm btn-danger btn-delete"><span class="fa fa-trash"></span> Sil</button>
+                            </td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+@section scriprt{
+    <script>
+        $(document).ready(function () {
+            $("table").DataTable();
+            $(".btn-delete").click(function () {
+                var bookID = $(this).data("id");
+                var bookName = $(this).data("name");
+                bootbox.confirm({
+                    title: "Kitap silinsin mi?",
+                    message: "'<b>" + bookName + "</b>' Silinsin mi",
+                    callback: function (r) {
+                        if (r) {
+                            $.ajax({
+                                type: "POST",
+                                url: "/Book/Delete/" + bookID,
+                                dataType: "JSON",
+                                contentType: "application/json",
+                                success: function (result) {
+                                    bootbox.alert({
+                                        title: "İşlem Sounucu", message: result.message,
+                                        callback: function () {
+                                            if (result.isSucesss) {
+                                                window.location = "*/Book/";
+                                            }
+
+                                        }
+                                    });
+
+                                },
+                                error: function () {
+                                    bootbox.alert({ title: "İşlem Başarısız", message: "Sunucuya bağlanırken bir hata oluştu!" });
+
+                                }
+                            });
+                        }
+
+                    }
+                });
+            });
+        });
+    </script>
+
+}

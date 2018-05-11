@@ -1,0 +1,16 @@
+﻿@model NASEB.Entities.Concrete.Customer
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<form action="/Customer/Deletee" method="post">
+    <label>@Model.Name isimli Müşteriyi silmek istediğiniz emin misiniz ?</label><br />
+    <div hidden class="form-group">
+        <label for="exampleInputEmail1">CustomerID</label>
+        <input  type="text" class="form-control" id="id" name="id" aria-describedby="id" value="@Model.CustomerID">
+
+    </div>
+
+    <button type="submit" class="btn btn-danger">Sil</button>
+</form>
+

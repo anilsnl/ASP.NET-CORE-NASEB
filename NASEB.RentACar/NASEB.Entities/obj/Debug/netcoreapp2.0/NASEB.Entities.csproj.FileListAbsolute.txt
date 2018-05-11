@@ -1,0 +1,36 @@
+C:\Users\anild\Desktop\NASEB\NASEB.Entities\bin\Debug\netcoreapp2.0\NASEB.Entities.deps.json
+C:\Users\anild\Desktop\NASEB\NASEB.Entities\bin\Debug\netcoreapp2.0\NASEB.Entities.dll
+C:\Users\anild\Desktop\NASEB\NASEB.Entities\bin\Debug\netcoreapp2.0\NASEB.Entities.pdb
+C:\Users\anild\Desktop\NASEB\NASEB.Entities\obj\Debug\netcoreapp2.0\NASEB.Entities.csproj.CoreCompileInputs.cache
+C:\Users\anild\Desktop\NASEB\NASEB.Entities\obj\Debug\netcoreapp2.0\NASEB.Entities.AssemblyInfoInputs.cache
+C:\Users\anild\Desktop\NASEB\NASEB.Entities\obj\Debug\netcoreapp2.0\NASEB.Entities.AssemblyInfo.cs
+C:\Users\anild\Desktop\NASEB\NASEB.Entities\obj\Debug\netcoreapp2.0\NASEB.Entities.dll
+C:\Users\anild\Desktop\NASEB\NASEB.Entities\obj\Debug\netcoreapp2.0\NASEB.Entities.pdb
+C:\Users\anild\Desktop\NASEB\NASEB.Entities\obj\Debug\netcoreapp2.0\NASEB.Entities.csprojResolveAssemblyReference.cache
+C:\Users\Baris\Desktop\NASEB\NASEB.Entities\bin\Debug\netcoreapp2.0\NASEB.Entities.deps.json
+C:\Users\Baris\Desktop\NASEB\NASEB.Entities\bin\Debug\netcoreapp2.0\NASEB.Entities.dll
+C:\Users\Baris\Desktop\NASEB\NASEB.Entities\bin\Debug\netcoreapp2.0\NASEB.Entities.pdb
+C:\Users\Baris\Desktop\NASEB\NASEB.Entities\obj\Debug\netcoreapp2.0\NASEB.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Baris\Desktop\NASEB\NASEB.Entities\obj\Debug\netcoreapp2.0\NASEB.Entities.AssemblyInfoInputs.cache
+C:\Users\Baris\Desktop\NASEB\NASEB.Entities\obj\Debug\netcoreapp2.0\NASEB.Entities.AssemblyInfo.cs
+C:\Users\Baris\Desktop\NASEB\NASEB.Entities\obj\Debug\netcoreapp2.0\NASEB.Entities.dll
+C:\Users\Baris\Desktop\NASEB\NASEB.Entities\obj\Debug\netcoreapp2.0\NASEB.Entities.pdb
+C:\Users\Baris\Desktop\NASEB\NASEB.Entities\obj\Debug\netcoreapp2.0\NASEB.Entities.csprojResolveAssemblyReference.cache
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Entities\bin\Debug\netcoreapp2.0\NASEB.Entities.deps.json
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Entities\bin\Debug\netcoreapp2.0\NASEB.Entities.dll
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Entities\bin\Debug\netcoreapp2.0\NASEB.Entities.pdb
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Entities\obj\Debug\netcoreapp2.0\NASEB.Entities.csproj.CoreCompileInputs.cache
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Entities\obj\Debug\netcoreapp2.0\NASEB.Entities.AssemblyInfoInputs.cache
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Entities\obj\Debug\netcoreapp2.0\NASEB.Entities.AssemblyInfo.cs
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Entities\obj\Debug\netcoreapp2.0\NASEB.Entities.dll
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Entities\obj\Debug\netcoreapp2.0\NASEB.Entities.pdb
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Entities\obj\Debug\netcoreapp2.0\NASEB.Entities.csprojResolveAssemblyReference.cache
+D:\aa\NASEB\NASEB.Entities\bin\Debug\netcoreapp2.0\NASEB.Entities.deps.json
+D:\aa\NASEB\NASEB.Entities\bin\Debug\netcoreapp2.0\NASEB.Entities.dll
+D:\aa\NASEB\NASEB.Entities\bin\Debug\netcoreapp2.0\NASEB.Entities.pdb
+D:\aa\NASEB\NASEB.Entities\obj\Debug\netcoreapp2.0\NASEB.Entities.csprojResolveAssemblyReference.cache
+D:\aa\NASEB\NASEB.Entities\obj\Debug\netcoreapp2.0\NASEB.Entities.csproj.CoreCompileInputs.cache
+D:\aa\NASEB\NASEB.Entities\obj\Debug\netcoreapp2.0\NASEB.Entities.AssemblyInfoInputs.cache
+D:\aa\NASEB\NASEB.Entities\obj\Debug\netcoreapp2.0\NASEB.Entities.AssemblyInfo.cs
+D:\aa\NASEB\NASEB.Entities\obj\Debug\netcoreapp2.0\NASEB.Entities.dll
+D:\aa\NASEB\NASEB.Entities\obj\Debug\netcoreapp2.0\NASEB.Entities.pdb

@@ -1,0 +1,16 @@
+﻿@model NASEB.Entities.Concrete.Car
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<form action="/Car/Deletee" method="post">
+    <label>@Model.CarName isimli arabayı silmek istediğiniz emin misiniz ?</label><br />
+    <div hidden class="form-group">
+        <label for="exampleInputEmail1">CarID</label>
+        <input type="text" class="form-control" id="id" name="id" aria-describedby="id" value="@Model.CarID">
+
+    </div>
+
+    <button type="submit" class="btn btn-danger">Sil</button>
+</form>
+

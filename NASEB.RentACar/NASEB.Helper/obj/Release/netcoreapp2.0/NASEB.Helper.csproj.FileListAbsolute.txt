@@ -1,0 +1,18 @@
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Helper\bin\Release\netcoreapp2.0\NASEB.Helper.deps.json
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Helper\bin\Release\netcoreapp2.0\NASEB.Helper.dll
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Helper\bin\Release\netcoreapp2.0\NASEB.Helper.pdb
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Helper\obj\Release\netcoreapp2.0\NASEB.Helper.csprojResolveAssemblyReference.cache
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Helper\obj\Release\netcoreapp2.0\NASEB.Helper.csproj.CoreCompileInputs.cache
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Helper\obj\Release\netcoreapp2.0\NASEB.Helper.AssemblyInfoInputs.cache
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Helper\obj\Release\netcoreapp2.0\NASEB.Helper.AssemblyInfo.cs
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Helper\obj\Release\netcoreapp2.0\NASEB.Helper.dll
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Helper\obj\Release\netcoreapp2.0\NASEB.Helper.pdb
+D:\aa\NASEB\NASEB.Helper\bin\Release\netcoreapp2.0\NASEB.Helper.deps.json
+D:\aa\NASEB\NASEB.Helper\bin\Release\netcoreapp2.0\NASEB.Helper.dll
+D:\aa\NASEB\NASEB.Helper\bin\Release\netcoreapp2.0\NASEB.Helper.pdb
+D:\aa\NASEB\NASEB.Helper\obj\Release\netcoreapp2.0\NASEB.Helper.csprojResolveAssemblyReference.cache
+D:\aa\NASEB\NASEB.Helper\obj\Release\netcoreapp2.0\NASEB.Helper.csproj.CoreCompileInputs.cache
+D:\aa\NASEB\NASEB.Helper\obj\Release\netcoreapp2.0\NASEB.Helper.AssemblyInfoInputs.cache
+D:\aa\NASEB\NASEB.Helper\obj\Release\netcoreapp2.0\NASEB.Helper.AssemblyInfo.cs
+D:\aa\NASEB\NASEB.Helper\obj\Release\netcoreapp2.0\NASEB.Helper.dll
+D:\aa\NASEB\NASEB.Helper\obj\Release\netcoreapp2.0\NASEB.Helper.pdb

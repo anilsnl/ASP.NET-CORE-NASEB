@@ -1,0 +1,115 @@
+C:\Users\anild\Desktop\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Services.deps.json
+C:\Users\anild\Desktop\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Services.dll
+C:\Users\anild\Desktop\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Services.pdb
+C:\Users\anild\Desktop\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.DAL.dll
+C:\Users\anild\Desktop\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Entities.dll
+C:\Users\anild\Desktop\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Helper.dll
+C:\Users\anild\Desktop\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\anild\Desktop\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.DAL.pdb
+C:\Users\anild\Desktop\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Entities.pdb
+C:\Users\anild\Desktop\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Helper.pdb
+C:\Users\anild\Desktop\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.xml
+C:\Users\anild\Desktop\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.csprojResolveAssemblyReference.cache
+C:\Users\anild\Desktop\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.csproj.CoreCompileInputs.cache
+C:\Users\anild\Desktop\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.AssemblyInfoInputs.cache
+C:\Users\anild\Desktop\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.AssemblyInfo.cs
+C:\Users\anild\Desktop\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.dll
+C:\Users\anild\Desktop\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.pdb
+D:\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\VS Project\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Services.deps.json
+D:\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\VS Project\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Services.dll
+D:\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\VS Project\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Services.pdb
+D:\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\VS Project\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.DAL.dll
+D:\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\VS Project\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Entities.dll
+D:\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\VS Project\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Helper.dll
+D:\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\VS Project\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.dll
+D:\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\VS Project\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.DAL.pdb
+D:\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\VS Project\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Entities.pdb
+D:\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\VS Project\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Helper.pdb
+D:\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\VS Project\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\Microsoft.EntityFrameworkCore.xml
+D:\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\VS Project\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.csprojResolveAssemblyReference.cache
+D:\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\VS Project\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.csproj.CoreCompileInputs.cache
+D:\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\VS Project\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.AssemblyInfoInputs.cache
+D:\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\VS Project\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.AssemblyInfo.cs
+D:\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\VS Project\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.csproj.CopyComplete
+D:\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\VS Project\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.dll
+D:\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\VS Project\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.pdb
+C:\Users\Baris\Desktop\YENİ PROJE PORNOSU\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Services.deps.json
+C:\Users\Baris\Desktop\YENİ PROJE PORNOSU\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Services.dll
+C:\Users\Baris\Desktop\YENİ PROJE PORNOSU\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Services.pdb
+C:\Users\Baris\Desktop\YENİ PROJE PORNOSU\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.DAL.dll
+C:\Users\Baris\Desktop\YENİ PROJE PORNOSU\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Entities.dll
+C:\Users\Baris\Desktop\YENİ PROJE PORNOSU\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Helper.dll
+C:\Users\Baris\Desktop\YENİ PROJE PORNOSU\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.DAL.pdb
+C:\Users\Baris\Desktop\YENİ PROJE PORNOSU\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Entities.pdb
+C:\Users\Baris\Desktop\YENİ PROJE PORNOSU\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Helper.pdb
+C:\Users\Baris\Desktop\YENİ PROJE PORNOSU\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.csprojResolveAssemblyReference.cache
+C:\Users\Baris\Desktop\YENİ PROJE PORNOSU\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.csproj.CoreCompileInputs.cache
+C:\Users\Baris\Desktop\YENİ PROJE PORNOSU\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.AssemblyInfoInputs.cache
+C:\Users\Baris\Desktop\YENİ PROJE PORNOSU\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.AssemblyInfo.cs
+C:\Users\Baris\Desktop\YENİ PROJE PORNOSU\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.csproj.CopyComplete
+C:\Users\Baris\Desktop\YENİ PROJE PORNOSU\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.dll
+C:\Users\Baris\Desktop\YENİ PROJE PORNOSU\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.pdb
+C:\Users\Baris\Desktop\YENİ PROJE\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Services.deps.json
+C:\Users\Baris\Desktop\YENİ PROJE\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Services.dll
+C:\Users\Baris\Desktop\YENİ PROJE\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Services.pdb
+C:\Users\Baris\Desktop\YENİ PROJE\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.DAL.dll
+C:\Users\Baris\Desktop\YENİ PROJE\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Entities.dll
+C:\Users\Baris\Desktop\YENİ PROJE\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Helper.dll
+C:\Users\Baris\Desktop\YENİ PROJE\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.DAL.pdb
+C:\Users\Baris\Desktop\YENİ PROJE\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Entities.pdb
+C:\Users\Baris\Desktop\YENİ PROJE\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Helper.pdb
+C:\Users\Baris\Desktop\YENİ PROJE\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.csprojResolveAssemblyReference.cache
+C:\Users\Baris\Desktop\YENİ PROJE\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.csproj.CoreCompileInputs.cache
+C:\Users\Baris\Desktop\YENİ PROJE\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.AssemblyInfoInputs.cache
+C:\Users\Baris\Desktop\YENİ PROJE\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.AssemblyInfo.cs
+C:\Users\Baris\Desktop\YENİ PROJE\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.csproj.CopyComplete
+C:\Users\Baris\Desktop\YENİ PROJE\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.dll
+C:\Users\Baris\Desktop\YENİ PROJE\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.pdb
+C:\Users\Baris\Desktop\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Services.deps.json
+C:\Users\Baris\Desktop\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Services.dll
+C:\Users\Baris\Desktop\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Services.pdb
+C:\Users\Baris\Desktop\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.DAL.dll
+C:\Users\Baris\Desktop\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Entities.dll
+C:\Users\Baris\Desktop\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Helper.dll
+C:\Users\Baris\Desktop\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.DAL.pdb
+C:\Users\Baris\Desktop\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Entities.pdb
+C:\Users\Baris\Desktop\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Helper.pdb
+C:\Users\Baris\Desktop\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.csprojResolveAssemblyReference.cache
+C:\Users\Baris\Desktop\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.csproj.CoreCompileInputs.cache
+C:\Users\Baris\Desktop\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.AssemblyInfoInputs.cache
+C:\Users\Baris\Desktop\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.AssemblyInfo.cs
+C:\Users\Baris\Desktop\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.csproj.CopyComplete
+C:\Users\Baris\Desktop\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.dll
+C:\Users\Baris\Desktop\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.pdb
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Services.deps.json
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Services.dll
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Services.pdb
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.DAL.dll
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Entities.dll
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Helper.dll
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.DAL.pdb
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Entities.pdb
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Helper.pdb
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.csprojResolveAssemblyReference.cache
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.csproj.CoreCompileInputs.cache
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.AssemblyInfoInputs.cache
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.AssemblyInfo.cs
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.csproj.CopyComplete
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.dll
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE322 Web Programing\NASEB.RentACar Product\Arichihes\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.pdb
+D:\aa\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Services.deps.json
+D:\aa\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Services.dll
+D:\aa\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Services.pdb
+D:\aa\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.DAL.dll
+D:\aa\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Entities.dll
+D:\aa\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Helper.dll
+D:\aa\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.DAL.pdb
+D:\aa\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Entities.pdb
+D:\aa\NASEB\NASEB.Services\bin\Debug\netcoreapp2.0\NASEB.Helper.pdb
+D:\aa\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.csprojResolveAssemblyReference.cache
+D:\aa\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.csproj.CoreCompileInputs.cache
+D:\aa\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.AssemblyInfoInputs.cache
+D:\aa\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.AssemblyInfo.cs
+D:\aa\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.csproj.CopyComplete
+D:\aa\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.dll
+D:\aa\NASEB\NASEB.Services\obj\Debug\netcoreapp2.0\NASEB.Services.pdb

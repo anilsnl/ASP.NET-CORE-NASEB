@@ -1,0 +1,92 @@
+﻿@model IEnumerable<NASEB.Entities.Concrete.Branch>
+@{
+    ViewData["Title"] = "Kullanıcı Ekle";
+}
+
+<form method="post" action="/User/Add">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Kullanıcı Adı</label>
+        <input type="text" class="form-control" id="Name" name="Name" aria-describedby="Name" placeholder="Kullanıcı Adını Giriniz...">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Parola</label>
+        <input type="text" class="form-control" id="Parola" name="Parola" aria-describedby="Parola" placeholder="Parola Giriniz...">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Kullanıcı Soyadı</label>
+        <input type="text" class="form-control" id="Surname" name="Surname" aria-describedby="Surname" placeholder="Kullanıcı Soyadını Giriniz...">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">E-Posta</label>
+        <input type="text" class="form-control" id="Email" name="Email" aria-describedby="Email" placeholder="E-Posta Giriniz...">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Telefon Numarası</label>
+        <input type="text" class="form-control" id="PhoneNumber" name="PhoneNumber" aria-describedby="PhoneNumber" placeholder="Telefon Numarasını Giriniz...">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Adres</label>
+        <input type="text" class="form-control" id="Adress" name="Adress" aria-describedby="Adress" placeholder="Adres Giriniz...">
+
+    </div>
+    <div class="form-group col-lg-4">
+        <label for="exampleInputEmail1">Doğum Tarihi - Gün</label>
+        <select class="form-control" id="Day" name="Day">
+            <option selected>Lütfen Gün giriniz..</option>
+            @for (var i = 1; i < 32; i++)
+            {
+                <option value="@i">@i</option>
+            }
+
+        </select>
+
+    </div>
+    <div class="form-group col-lg-4">
+        <label for="exampleInputEmail1">Doğum Tarihi - Ay</label>
+        <select class="form-control" id="Month" name="Month">
+            <option selected>Lütfen Ay giriniz..</option>
+            @for (var i = 1; i < 13; i++)
+        {
+            <option value="@i">@i</option>
+    }
+
+        </select>
+
+    </div>
+    <div class="form-group col-lg-4">
+        <label for="exampleInputEmail1">Doğum Tarihi - Yıl</label>
+        <select class="form-control" id="Year" name="Year">
+            <option selected>Lütfen Yıl giriniz..</option>
+            @for (var i = 2010; i > 1939; i--)
+        {
+            <option value="@i">@i</option>
+    }
+
+        </select>
+
+    </div>
+
+
+ 
+
+
+
+    <div class="form-group">
+        <label for="exampleInputEmail1">Şube</label>
+        <select class="form-control" id="BranchID" name="BranchID">
+            <option selected>Lütfen Şube Seçiniz...</option>
+            @foreach (var item in Model)
+            {
+                <option value="@item.BranchID">@item.BranchName</option>
+            }
+        </select>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>

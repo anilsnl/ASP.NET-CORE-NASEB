@@ -1,0 +1,57 @@
+﻿@model NASEB.Entities.Concrete.Customer
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<form method="post" action="/Customer/Edit">
+    @Html.AntiForgeryToken()
+    <div class="form-group">
+        <label for="exampleInputEmail1">İsim</label>
+        <input type="text" class="form-control" id="CustomerName" name="CustomerName" aria-describedby="CustomerName" value="@Model.Name">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Soyisim</label>
+        <input type="text" class="form-control" id="CustomerSurname" name="CustomerSurname" aria-describedby="CustomerSurname" value="@Model.Surname">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">T.C Kimlik NO</label>
+        <input type="text" class="form-control" id="TRIDNO" name="TRIDNO" aria-describedby="TRIDNO" value="@Model.TRIDNo">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Adresi</label>
+        <input type="text" class="form-control" id="Adress" name="Adress" aria-describedby="Adress" value="@Model.Adress">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Telefon No</label>
+        <input type="text" class="form-control" id="PhoneNumber" name="PhoneNumber" aria-describedby="PhoneNumber" value="@Model.PhoneNumber">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Doğum Yılı</label>
+        <input type="text" class="form-control" id="BirthDate" name="BirthDate" aria-describedby="BirthDate" value="@Model.BirthDate">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Pasaport NO</label>
+        <input type="text" class="form-control" id="PasaportNumber" name="PasaportNumber" aria-describedby="PasaportNumber" value="@Model.PasportNumber">
+
+    </div>
+    <div hidden class="form-group">
+        <label for="exampleInputEmail1">User ID</label>
+        <input type="text" class="form-control" id="UserID" name="UserID" aria-describedby="UserID" value="@ViewBag.user">
+
+    </div>
+    <div hidden class="form-group">
+        <label for="exampleInputEmail1">CustomerID</label>
+        <input type="text" class="form-control" id="CustomerID" name="CustomerID" aria-describedby="CustomerID" value="@Model.CustomerID">
+
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>
+

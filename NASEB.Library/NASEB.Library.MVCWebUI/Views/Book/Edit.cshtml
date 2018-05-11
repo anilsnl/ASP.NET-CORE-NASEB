@@ -1,0 +1,107 @@
+﻿@model EditBookViewModel
+@{
+    ViewData["Title"] = Model.Book.BookName + "için kitap bilgilerini düzenleyin.";
+}
+
+
+
+<div class="col-md-12 col-lg-12 col-xs-12">
+    <div class="row">
+
+        <form asp-controller="Book" asp-action="Edit" method="post">
+
+            @Html.AntiForgeryToken()
+            @Html.HiddenFor(a=>a.Book.BookID)
+            <div class="alert alert-primary" asp-validation-summary="All"></div>
+            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                <div class="form-group">
+                    <label class="control-label" asp-for="Book.BookName"></label>
+                    <input class="form-control" asp-for="Book.BookName" placeholder="Kitap adı girin." type="text" />
+                    <span class="alert-danger" asp-validation-for="Book.BookName"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" asp-for="Book.ISBN"></label>
+                    <input class="form-control" asp-for="Book.ISBN" type="text" placeholder="ISBN Girin." />
+                    <span class="alert-danger" asp-validation-for="Book.ISBN"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" asp-for="Book.PublisherID"></label>
+                    <select class="form-control" asp-for="Book.PublisherID" style="margin: 0; padding: 0; height: 100%;">
+                        @foreach (var item in Model.Publishers)
+                        {
+                            <option value="@item.Key">@item.Value</option>
+                        }
+                    </select>
+                    <span class="alert-danger" asp-validation-for="Book.PublisherID"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Yazar</label>
+                    <select class="form-control" asp-for="SelectedAuthors" multiple="multiple" style="margin: 0; padding: 0; height: 100%;">
+                        @foreach (var item in Model.Authors)
+                        {
+                            <option value="@item.Key">@item.Value</option>
+                        }
+                    </select>
+                    <span class="alert-danger" asp-validation-for="Book.PublisherID"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" asp-for="Book.BookTypeID"></label>
+                    <select class="form-control" asp-for="Book.BookTypeID" style="margin: 0; padding: 0; height: 100%;">
+                        @foreach (var item in Model.BookTypes)
+                        {
+                            <option value="@item.Key">@item.Value</option>
+                        }
+                    </select>
+                    <span class="alert-danger" asp-validation-for="Book.PublisherID"></span>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 col-xs-12 col-sm-6">
+                <div class="form-group">
+                    <label class="control-label" asp-for="Book.SayfaSayısı"></label>
+                    <input class="form-control" asp-for="Book.SayfaSayısı" placeholder="Sayfa sayısı girin." type="number" />
+                    <span class="alert-danger" asp-validation-for="Book.SayfaSayısı"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" asp-for="Book.Location"></label>
+                    <input class="form-control" asp-for="Book.Location" placeholder="Kitap konumunu girin." type="text" />
+                    <span class="alert-danger" asp-validation-for="Book.Location"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" asp-for="Book.TotalQuantity"></label>
+                    <input class="form-control" asp-for="Book.TotalQuantity" placeholder="Kitapdan kaç adet bulunduğunu girin." type="number" value="1" />
+                    <span class="alert-danger" asp-validation-for="Book.TotalQuantity"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" asp-for="Book.BookSummary"></label>
+                    <textarea class="form-control" asp-for="Book.BookSummary" rows="4" placeholder="Kitabın kısa özetini girin."></textarea>
+                    <span class="alert-danger" asp-validation-for="Book.BookSummary"></span>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-12 col-xs-12">
+
+                <button class="btn btn-lg btn-primary" type="submit"><span class="fa fa-plus"></span> Bilgileri Güncelle</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section head
+    {
+    <link href="~/lib/select2/select2.css" rel="stylesheet" />
+}
+
+@section scriprt
+    {
+
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/lib/select2/select2.min.js"></script>
+    <script src="~/lib/select2/select2_locale_tr.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("select").select2();
+        });
+    </script>
+}

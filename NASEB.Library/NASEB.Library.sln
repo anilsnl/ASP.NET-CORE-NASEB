@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NASEB.Library.MVCWebUI", "NASEB.Library.MVCWebUI\NASEB.Library.MVCWebUI.csproj", "{E3EA16E7-7F51-4A4B-97D9-2DB26E6353A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NASEB.Library.Entities", "NASEB.Library.Entities\NASEB.Library.Entities.csproj", "{E40ACA5E-927B-4027-8C8C-E2E741D66EA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NASEB.Library.DAL", "NASEB.Library.DAL\NASEB.Library.DAL.csproj", "{B84DAC9A-208C-4B47-AC4F-614621589722}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NASEB.Library.Services", "NASEB.Library.Services\NASEB.Library.Services.csproj", "{E5BCC044-DA2E-4A9A-9587-C0381105BDC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NASEB.Library.Helper", "NASEB.Library.Helper\NASEB.Library.Helper.csproj", "{8CAA3CEF-EEE0-43A5-9621-7FB4AC90790C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3EA16E7-7F51-4A4B-97D9-2DB26E6353A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3EA16E7-7F51-4A4B-97D9-2DB26E6353A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3EA16E7-7F51-4A4B-97D9-2DB26E6353A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3EA16E7-7F51-4A4B-97D9-2DB26E6353A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E40ACA5E-927B-4027-8C8C-E2E741D66EA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E40ACA5E-927B-4027-8C8C-E2E741D66EA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E40ACA5E-927B-4027-8C8C-E2E741D66EA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E40ACA5E-927B-4027-8C8C-E2E741D66EA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B84DAC9A-208C-4B47-AC4F-614621589722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B84DAC9A-208C-4B47-AC4F-614621589722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B84DAC9A-208C-4B47-AC4F-614621589722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B84DAC9A-208C-4B47-AC4F-614621589722}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5BCC044-DA2E-4A9A-9587-C0381105BDC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5BCC044-DA2E-4A9A-9587-C0381105BDC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5BCC044-DA2E-4A9A-9587-C0381105BDC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5BCC044-DA2E-4A9A-9587-C0381105BDC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CAA3CEF-EEE0-43A5-9621-7FB4AC90790C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CAA3CEF-EEE0-43A5-9621-7FB4AC90790C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CAA3CEF-EEE0-43A5-9621-7FB4AC90790C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CAA3CEF-EEE0-43A5-9621-7FB4AC90790C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2113B1DE-C03A-49B0-AB36-0DAAD1071EF2}
+	EndGlobalSection
+EndGlobal

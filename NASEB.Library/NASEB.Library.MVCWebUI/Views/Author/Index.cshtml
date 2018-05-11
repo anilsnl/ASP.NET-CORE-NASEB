@@ -1,0 +1,164 @@
+﻿@model IEnumerable<NASEB.Library.Entities.Concrete.Author>
+@{
+    ViewData["Title"] = "Yazarlar";
+}
+
+<div class="modal modal-dialog modal-danger" id="mdl-add-author" style="position: absolute;">
+    <div class="modal-content ">
+        <div class="modal-header">
+            <h1 class="modal-title">Yeni Yazar Kaydı Yapın</h1>
+        </div>
+        <div class="modal-body">
+            <div class="input-group">
+                <span class="input-group-addon">Yazar Adı</span>
+                <input type="text" class="form-control" id="txt-author-add-name" placeholder="Yazar adı yazın"/>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button data-dismiss="modal" class="btn btn-danger"><span class="fa fa-close"></span> İptal</button>
+            <button id="btn-author-add-yes" class="btn btn-primary"><span class="fa fa-save"></span> Yazarı Kaydet</button>
+        </div>
+    </div>
+</div>
+<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+    <div class="row">
+        <div class="col-md-12">
+            <button id="btn-add-author" class="btn btn-danger" type="button"><span class="fa fa-plus"></span> Yeni Yazar Kaydı</button>
+        </div>
+        <br />
+        <br/>
+    </div>
+  
+    <div class="row">
+      @if (Model.Count() > 0)
+      {
+          foreach (var item in Model)
+          {
+              <div class="card col-lg-2 col-md-2 col-sm-3 col-xs-12" >
+                  <img class="card-img-top img-circle " src="/Icons/AuthorIcon.png" alt="Card image cap" width="%100" height="%100" >
+                  <div class="card-body" >
+                      <h5 class="card-title">
+                         @if (item.NameSurname.Length > 25)
+                         {
+                             <marquee>AUTHOR @item.NameSurname</marquee> 
+                         }
+                         else
+                         {
+                             <span>@item.NameSurname</span>
+                         }
+                      </h5>
+  
+                  </div>
+            
+                  <div class="card-body">
+                      <button data-id="@item.AuthorID" data-name="@item.NameSurname" class="card-link btn btn-sm btn-primary btn-delete"><span class="fa fa-trash"> </span> Sil</button> 
+                      <a href="/Book/Index/@item.AuthorID" class="card-link btn btn-sm btn-danger"><span class="fa fa-arrow-right"></span> Kitaplarını Gör</a>
+                  </div>
+                  <br />
+              </div>
+          }
+      }
+    </div>
+</div>
+
+
+
+
+@section scriprt
+    {
+
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+    <script src="~/Grid-MVC/Grid.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#btn-add-author").click(function() {
+                $("#mdl-add-author").modal("show");
+
+            });
+            $("#btn-author-add-yes").click(function() {
+                var authorName = $("#txt-author-add-name").val();
+                if (authorName!=null&&authorName.length>5) {
+                    $.ajax({
+                        type: "POST",
+                        url: "/Author/Add/" + authorName,
+                        dataType: "JSON",
+                        contentType: "application/json",
+                        success: function(r) {
+                            if (r.isSuccess) {
+                                bootbox.alert({
+                                    title: "İşlem Başarıyla Ramamlandı!",
+                                    message: "Yazar başarıyla eklendi;",
+                                    callback: function() {
+                                        window.location = "/Author/";
+                                    }
+                                });
+                            } else {
+                                bootbox.alert({
+                                    title: "İşlem Tamalandı!",
+                                    message:r.Message,
+                                    callback: function () {
+                                        $("#mdl-add-author").modal("hide");
+                                    }
+                                });
+                            }
+
+                        }, error: function() {
+                            bootbox.alert({
+                                title: "İşlem Başarısız!",
+                                message:"Sonucuya bağlanırken bir hata oluştu;"
+                            });
+                        }
+                    });
+                } else {
+                    bootbox.alert({
+                        title: "İşlem Başarısız!",
+                        message:"Lütfen girdiğiniz bilgileri kontrol edin; Yazar adı en az 5 karaterden oluşmalıdır;"
+                    });
+                }
+            });
+
+
+            //deleting author
+            $(".btn-delete").click(function () {
+                var id = $(this).data("id");
+                var name = $(this).data("name");
+                bootbox.confirm({
+                    title: "Yazarı Sil",
+                    message: "<b>" + name + "<b/><br/>Yukarıda verilen yazar silinsin mi?",
+                    callback: function (r) {
+                        if (r) {
+                            $.ajax({
+                                type: "POST",
+                                url: "/Author/Delete/" + id,
+                                dataType: "JSON",
+                                contentType: "application/json",
+                                success: function (s) {
+                                    bootbox.alert({
+                                        title: "İşlem Tamamlandı",
+                                        message: s.message,
+                                        callback: function () {
+                                            if (s.isSuccess) {
+                                                window.location = "/Author/";
+                                            }
+
+                                        }
+                                    });
+
+                                }, error: function () {
+                                    bootbox.alert({ title: "İşlem başarısız", message: "Sunucuya bağlanırken bir hata oluştu!" });
+
+                                }
+                            });
+                        }
+                    }
+                });
+            });
+
+        });
+    </script>
+}
+@section head
+{
+    <link href="~/Grid-MVC/Gird.css" rel="stylesheet" />
+}

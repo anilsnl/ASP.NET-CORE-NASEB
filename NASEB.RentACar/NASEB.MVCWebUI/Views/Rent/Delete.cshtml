@@ -1,0 +1,16 @@
+﻿@model NASEB.Entities.Concrete.Rent
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<form action="/Rent/Deletee" method="post">
+    <label>@Model.RentID Numaralı kiralamayı silmek istediğiniz emin misiniz ?</label><br />
+    <div hidden class="form-group">
+        <label for="exampleInputEmail1">RentID</label>
+        <input type="text" class="form-control" id="id" name="id" aria-describedby="id" value="@Model.RentID">
+
+    </div>
+
+    <button type="submit" class="btn btn-danger">Sil</button>
+</form>
+

@@ -1,0 +1,55 @@
+﻿@model IEnumerable<NASEB.Entities.Concrete.Branch>
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<form method="post" action="/User/Edit">
+    <div class="form-group">
+        <label for="exampleInputEmail1">Kullanıcı Adı</label>
+        <input type="text" class="form-control" id="Name" name="Name" aria-describedby="Name" value="@ViewBag.user.Name">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Parola</label>
+        <input type="password" class="form-control" id="Parola" name="Parola" aria-describedby="Parola" placeholder="Yeni Parolayı girin (İsteğe bağlı)">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Kullanıcı Soyadı</label>
+        <input type="text" class="form-control" id="Surname" name="Surname" aria-describedby="Surname" value="@ViewBag.user.Surname">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">E-Posta</label>
+        <input type="text" class="form-control" id="Email" name="Email" aria-describedby="Email" value="@ViewBag.user.EMail">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Telefon Numarası</label>
+        <input type="text" class="form-control" id="PhoneNumber" name="PhoneNumber" aria-describedby="PhoneNumber" value="@ViewBag.user.PhoneNumber">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Adres</label>
+        <input type="text" class="form-control" id="Adress" name="Adress" aria-describedby="Adress" value="@ViewBag.user.Address">
+
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Şube</label>
+        <select class="form-control" id="BranchID" name="BranchID">
+            <option value="@ViewBag.user.BranchID" selected>@ViewBag.user.BranchID</option>
+            @foreach (var item in Model)
+            {
+                <option value="@item.BranchID">@item.BranchName</option>
+            }
+        </select>
+    </div>
+    <div hidden class="form-group">
+        <label for="exampleInputEmail1">User ID</label>
+        <input type="text" class="form-control" id="UserID" name="UserID" aria-describedby="UserID" value="@ViewBag.user.UserID">
+
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>

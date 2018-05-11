@@ -1,0 +1,42 @@
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Services\bin\Release\netcoreapp2.0\NASEB.Library.Services.deps.json
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Services\bin\Release\netcoreapp2.0\NASEB.Library.Services.dll
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Services\bin\Release\netcoreapp2.0\NASEB.Library.Services.pdb
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Services\bin\Release\netcoreapp2.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Services\bin\Release\netcoreapp2.0\NASEB.Library.DAL.dll
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Services\bin\Release\netcoreapp2.0\NASEB.Library.Entities.dll
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Services\bin\Release\netcoreapp2.0\NASEB.Library.Helper.dll
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Services\bin\Release\netcoreapp2.0\Newtonsoft.Json.dll
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Services\bin\Release\netcoreapp2.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Services\bin\Release\netcoreapp2.0\NASEB.Library.DAL.pdb
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Services\bin\Release\netcoreapp2.0\NASEB.Library.Entities.pdb
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Services\bin\Release\netcoreapp2.0\NASEB.Library.Helper.pdb
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Services\bin\Release\netcoreapp2.0\Microsoft.EntityFrameworkCore.xml
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Services\bin\Release\netcoreapp2.0\Newtonsoft.Json.xml
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Services\bin\Release\netcoreapp2.0\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Services\obj\Release\netcoreapp2.0\NASEB.Library.Services.csprojResolveAssemblyReference.cache
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Services\obj\Release\netcoreapp2.0\NASEB.Library.Services.csproj.CoreCompileInputs.cache
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Services\obj\Release\netcoreapp2.0\NASEB.Library.Services.AssemblyInfoInputs.cache
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Services\obj\Release\netcoreapp2.0\NASEB.Library.Services.AssemblyInfo.cs
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Services\obj\Release\netcoreapp2.0\NASEB.Library.Services.csproj.CopyComplete
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Services\obj\Release\netcoreapp2.0\NASEB.Library.Services.dll
+C:\Users\anild\iCloudDrive\Altınbaş Universty\2017-2018 Spring\CE370 SortWare Enginniering\Library Project\archiwe\NASEB.Library\NASEB.Library.Services\obj\Release\netcoreapp2.0\NASEB.Library.Services.pdb
+D:\aa\NASEB.Library\NASEB.Library.Services\obj\Release\netcoreapp2.0\NASEB.Library.Services.csprojResolveAssemblyReference.cache
+D:\aa\NASEB.Library\NASEB.Library.Services\obj\Release\netcoreapp2.0\NASEB.Library.Services.csproj.CoreCompileInputs.cache
+D:\aa\NASEB.Library\NASEB.Library.Services\obj\Release\netcoreapp2.0\NASEB.Library.Services.AssemblyInfoInputs.cache
+D:\aa\NASEB.Library\NASEB.Library.Services\obj\Release\netcoreapp2.0\NASEB.Library.Services.AssemblyInfo.cs
+D:\aa\NASEB.Library\NASEB.Library.Services\obj\Release\netcoreapp2.0\NASEB.Library.Services.dll
+D:\aa\NASEB.Library\NASEB.Library.Services\obj\Release\netcoreapp2.0\NASEB.Library.Services.pdb
+D:\aa\NASEB.Library\NASEB.Library.Services\bin\Release\netcoreapp2.0\NASEB.Library.Services.deps.json
+D:\aa\NASEB.Library\NASEB.Library.Services\bin\Release\netcoreapp2.0\NASEB.Library.Services.dll
+D:\aa\NASEB.Library\NASEB.Library.Services\bin\Release\netcoreapp2.0\NASEB.Library.Services.pdb
+D:\aa\NASEB.Library\NASEB.Library.Services\bin\Release\netcoreapp2.0\NASEB.Library.DAL.dll
+D:\aa\NASEB.Library\NASEB.Library.Services\bin\Release\netcoreapp2.0\NASEB.Library.Entities.dll
+D:\aa\NASEB.Library\NASEB.Library.Services\bin\Release\netcoreapp2.0\NASEB.Library.Helper.dll
+D:\aa\NASEB.Library\NASEB.Library.Services\bin\Release\netcoreapp2.0\Newtonsoft.Json.dll
+D:\aa\NASEB.Library\NASEB.Library.Services\bin\Release\netcoreapp2.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\aa\NASEB.Library\NASEB.Library.Services\bin\Release\netcoreapp2.0\NASEB.Library.DAL.pdb
+D:\aa\NASEB.Library\NASEB.Library.Services\bin\Release\netcoreapp2.0\NASEB.Library.Entities.pdb
+D:\aa\NASEB.Library\NASEB.Library.Services\bin\Release\netcoreapp2.0\NASEB.Library.Helper.pdb
+D:\aa\NASEB.Library\NASEB.Library.Services\bin\Release\netcoreapp2.0\Newtonsoft.Json.xml
+D:\aa\NASEB.Library\NASEB.Library.Services\bin\Release\netcoreapp2.0\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\aa\NASEB.Library\NASEB.Library.Services\obj\Release\netcoreapp2.0\NASEB.Library.Services.csproj.CopyComplete

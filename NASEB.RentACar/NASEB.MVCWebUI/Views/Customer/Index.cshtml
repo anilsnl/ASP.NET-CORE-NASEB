@@ -1,0 +1,46 @@
+﻿@model IEnumerable<NASEB.Entities.Concrete.Customer>
+@{
+    ViewData["Title"] = "Müşteriler";
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">İsim</th>
+            <th scope="col">Soyisim</th>
+            <th scope="col">T.C. Kimlik NO</th>
+            <th scope="col">Adresi</th>
+            <th scope="col">Telefon Numarası</th>
+            <th scope="col">Pasaport NO</th>
+            <th scope="col">Düzenle</th>
+            <th scope="col">Sil</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Surname</td>
+            <td>@item.TRIDNo</td>
+            <td>@item.Adress</td>
+            <td>@item.PhoneNumber</td>
+            <td>@item.PasportNumber</td>
+            <td><a href="/Customer/Edit/@item.CustomerID" class="btn btn-primary">Düzenle</a></td>
+            <td><a href="/Customer/Delete/@item.CustomerID" class="btn btn-danger">Sil</a></td>
+
+
+        </tr>
+
+        }
+    </tbody>
+</table>
+@section scriprt{
+    <script>
+    $(document).ready(function() {
+        $("table").DataTable();
+    });
+    </script>
+}
+
+
